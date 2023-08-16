@@ -1,0 +1,108 @@
+/* Estilos do menu */
+
+.main-menu{
+    display: flex;
+    justify-content: end ;
+    width: 90%;
+    z-index: 100;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+}
+
+.menu-list li {
+    position: relative;
+    margin: 0 10px;
+}
+
+.menu-list a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+
+}
+
+.menu-list a:hover {
+    color: #0173fe;
+}
+
+/* Estilos do submenu */
+.submenu-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding-top: 10px;
+    min-width: 200px;
+}
+
+/* Estilos do submenu */
+.submenu {
+    position: relative;
+}
+
+.submenu-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding-top: 10px;
+    min-width: 200px;
+}
+
+.submenu-content.active {
+    display: block;
+    z-index: 2; /* Adicione um valor maior de z-index */
+}
+
+/* Adicione espaço para o submenu empurrar os outros conteúdos */
+.submenu-content.active + .submenu-content {
+    margin-top: 10px;
+}
+
+.submenu-content li {
+    margin: 0;
+}
+
+.submenu-content a {
+    padding: 10px;
+}
+
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .menu-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #FFF;
+        padding-top: 2%;
+        padding-left: 8%;
+    }
+
+    .menu-list.active {
+        display: flex;
+    }
+
+    .menu-list li {
+        margin: 0;
+    }
+}

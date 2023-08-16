@@ -1,0 +1,27 @@
+header{
+    display: flex;
+    align-items: center;
+    height: 10%;
+    background-color: #fff;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.box-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-header{
+    width: 12.5%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .logo-header{
+        width: 50%;
+    }
+}
