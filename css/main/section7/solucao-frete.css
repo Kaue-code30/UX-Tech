@@ -1,0 +1,138 @@
+.solucao-para-gestao-de-frete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #dedede;
+}
+
+.solucao-para-gestao-de-frete-box-one{
+    display: grid;
+    grid-template-areas: "title image";
+    grid-template-columns: 45% 55%;
+    height: 60%;
+    
+}
+
+.title-box-one{
+    display: flex;
+    padding-top: 10%;
+    font-size: 2.3rem;
+    grid-area: title;
+}
+.image-box-one{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    grid-area: image;
+}
+
+
+.solucao-para-gestao-de-frete-box-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.box-two-itens-one{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+    gap: 10%;
+    width: 100%;
+}
+.box-two-itens-two{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+    gap: 10%;
+    width: 100%;
+}
+
+.item-box-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title-box-two{
+    font-size: 4rem;
+}
+.text-box-two{
+    text-align: center;
+    color: #0074ff;
+    font-size: 16px;
+}
+
+.button-solucoes{
+    background-color: #0074ff;
+    border: none;
+    border-radius: 100px;
+    width: 25%;
+    padding: 1%;
+    margin-left: 2%;
+}
+.button-solucoes > a{
+    color: #FFF;
+    font-size: 16px;
+}
+
+@media(max-width:768px) {
+
+    .solucao-para-gestao-de-frete{
+        padding: 07%;
+        padding-top: 0;
+        height: 170vh;
+    }
+    .solucao-para-gestao-de-frete-box-one{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        height: 30%;
+
+    }
+    .solucao-para-gestao-de-frete-box-two{
+        display: flex;
+        gap: 15px;
+    }
+    .box-two-itens-one{
+        display: flex;
+        flex-direction: column;
+    }
+    .box-two-itens-two{
+        display: flex;
+        flex-direction: column;
+    }
+    .title-box-one{
+        font-size: 25px;
+        padding-top: 0;
+    }
+    .box-two-itens-one{
+        display: flex;
+        gap: 30px;
+    }
+    .box-two-itens-two{
+        display: flex;
+        gap: 30px;
+    }
+    .title-box-two{
+        font-size: 3.3rem;
+    }
+    .button-solucoes{
+        margin-top: 10px;
+        padding: 5%;
+        width: 80%;
+    }
+
+}
+
+

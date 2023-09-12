@@ -1,0 +1,147 @@
+.melhores-opcoes-frete{
+    background-color: #FFF;
+    height: 80vh;
+}
+.frete-box{
+   display: grid;
+   grid-template-areas: "text image"; 
+   grid-template-columns: 50% 50%;
+   width: 100%;
+   height: 100%;
+}
+
+.text-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    grid-area: text;
+    padding-left: 20%;
+    padding-top: 20%;
+
+
+}
+.title-fretes{
+    font-size: 40px;
+    line-height: 1.2em;
+    width: 80%;
+    font-weight: 700;
+}
+.subtitle-fretes{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.box-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.icon-check{
+    font-size: 1.5rem;
+}
+.text-icon{
+    color: #0074ff;
+}
+.icon-list{
+    display: flex;
+    gap: 1.5%;
+}
+
+.button-frete{
+    margin-top: 2%;
+    border-radius: 100px;
+    padding: 2.5%;
+    color: #FFF;
+    border: none;
+    background-color: #0074ff;
+    width: 45%;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.button-frete:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+
+
+.image-container-frete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: image;
+}
+
+.image-box-frete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.image-frete{
+    width: 80%;
+}
+.image-container-frete-mobile{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .melhores-opcoes-frete{
+        padding-bottom: 20%;
+        height: 100vh;
+    }
+
+    .frete-box{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+     }
+    .image-container-frete-mobile{
+        display: flex;
+    }
+    .text-icons{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        grid-area: text;
+        padding: 07%;    
+        height: 100%;
+    }
+    .title-fretes{
+        font-size: 30px;
+        line-height: 1.2em;
+        width: 100%;
+        font-weight: 700;
+    }
+    .image-frete{
+        width: 100%;
+    }
+    .box-list{
+        margin-top: 3%;
+    }
+    .icon-list{
+        display: flex;
+        align-items: center;
+    }
+    .icon-check{
+        font-size: 1.4rem;
+    }
+    .text-icon{
+        font-size: 15px;
+        color: #0074ff;
+    }
+    .button-frete{
+        margin-top: 2%;
+        width: 100%;
+    }
+
+
+    .image-container-frete{
+        display: none;
+    }
+
+}

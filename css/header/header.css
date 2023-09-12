@@ -1,27 +1,91 @@
 header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     align-items: center;
-    height: 10%;
-    background-color: #fff;
-    padding-left: 10%;
-    padding-right: 10%;
+    justify-content: space-between;
+    height: 9%;
+    background-color: #000;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .box-header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 10px;
     width: 100%;
 }
 
 .logo-header{
-    width: 12.5%;
+    width:80%;
+}
+
+.image-box{
+    width: 5%;
+}
+
+.button-header{
+    color: #000000;
+    border-radius: 50px;
+    border: none;
+    border: 1px solid #000000;
+    background-color: #FFF;
+    height: 55%;
+    font-weight: 300;
+    width: 20%;
+    font-size: 0.8rem;
+    
+}
+    
+.button-header:hover{
+    background-color: #000;
+    color: #FFF;
+    border: 1px solid #FFF;
+}
+.button-header-menu{
+    display: none;
 }
 
 
 
 @media screen and (max-width: 768px) {
     .logo-header{
-        width: 50%;
+        width: 10   0%;
+    }
+    .image-box{
+        width: 20%;
+    }
+    header{
+        height: 10%;
+    }
+    .box-header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .button-header{
+        display: none;
+    }
+    .button-header-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000000;
+        border-radius: 100px;
+        border: none;
+        border: 1px solid #000000;
+        background-color: #FFF;
+        height: 30px;
+        font-weight: 400;
+        width: 80%;
+        font-size: 0.8rem;
+        padding: 20px;
+    }
+    .button-header-menu:hover{
+        background-color: #000;
+        color: #FFF;
+        border: 1px solid #FFF;
     }
 }

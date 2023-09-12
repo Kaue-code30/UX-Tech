@@ -14,81 +14,93 @@
     <link rel="stylesheet" href="./css/header/menu.css">
     <link rel="stylesheet" href="./css/main/main.css">
     <link rel="stylesheet" href="./css/main/slider.css">
+    <link rel="stylesheet" href="./css/main/section2/tech.css">
+    <link rel="stylesheet" href="./css/main/section3/conversao-de-venda.css">
+    <link rel="stylesheet" href="./css/main/section4/gerencie-entregas.css">
+    <link rel="stylesheet" href="./css/main/section5/melhoresFretes.css">
+    <link rel="stylesheet" href="./css/main/section6/satifacaoCliente.css">
+    <link rel="stylesheet" href="./css/main/section7/solucao-frete.css">
+    <link rel="stylesheet" href="./css/main/section8/cta.css">
     <script src="./JS/menuHeader/index.js"></script>
     <script src="./JS/Main/slider-home/index.js"></script>
+    <script src="./JS/Main/conversao-de-vendas/index.js"></script>
+    <script src="./JS/Main/sliderConversao/index.js"></script>
+
+
 </head>
 <body>
     <Header>
         <div class="box-header">
-            <img class="logo-header" src="./images/Header/logo-header.png" alt="">
+            <a class="image-box" href="https://uxgroup.com.br">
+                 <img class="logo-header" src="https://uxgroup.com.br/_next/static/media/ux-branco.40be281c.svg" alt="">
+            </a>
+
+            <nav class="main-menu">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="menu-list">
+                    <li><a href="#">E-COMMERCE</a></li>
+                    <li class="submenu">
+                        <a href="#">TECNOLOGIA</a>
+                    </li>
+                    <li class="submenu">
+                        <a href="#">PROGRAMA ESG</a>
+                    </li>
+                    <li class="submenu">
+                        <a href="#">CONTATO</a>
+                    </li>
+                    <li class="submenu">
+                        <a href="#">BLOG</a>
+                    </li>
+                    <p class="localizaz-tech" style="color: #fff; font-weight: 700; padding-top: 20%; padding-bottom: 20px; padding-left: 10px;">Localizar meu pedido:</p> 
+                    <Button style="margin-left: 10px;" class="button-header-menu">
+                        ondetah minha entrega
+                    </Button>
+                </ul>
+            </nav>
+           
         </div>
-        <nav class="main-menu">
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="menu-list">
-                <li><a href="#">Home</a></li>
-                <li class="submenu">
-                    <a href="#">e-Commerce</a>
-                    <ul class="submenu-content">
-                        <li><a href="#">TMS Embarcador</a></li>
-                        <li><a href="#">Simulador de Frete</a></li>
-                        <li><a href="#">Cálculo de frete</a></li>
-                        <li><a href="#">Rastreamento</a></li>
-                        <li><a href="#">Conciliação</a></li>
-                        <li><a href="#">Live Tracking</a></li>
-                        <li><a href="#">Frete Dinâmico</a></li>
-                    </ul>
-                </li>
-                <li class="submenu">
-                    <a href="#">Marktplace</a>
-                    <ul class="submenu-content">
-                        <li><a href="#">Envios</a></li>
-                        <li><a href="#">Gateway de frete</a></li>
-                        <li><a href="#">Etiquetas</a></li>
-                        <li><a href="#">Rastreamento</a></li>
-                    </ul>
-                </li>
-                <li class="submenu">
-                    <a href="#">Transportador</a>
-                    <ul class="submenu-content">
-                        <li><a href="#">TMS Transportador</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+       
+        <Button class="button-header">
+            ondetah minha entrega
+        </Button>
     </Header>
+
     <Main>
 
         <Section class="slider">
+            <div class="slider-nav-prev">
+                <button class="slide-prev">&#10094;</button>
+            </div>
             
-            <button class="slide-prev">&#10094;</button>
+            
             <div class="slider-container">
                 <div id="slide-1" class="slide">
                     <div class="slide-content">
-                        <h1>Reduza 45% dos seus custos com frete.</h1>
-                        <p>Ultilize o <span> TMS Embarcador</span> mais completo do mercado.</p>
+                        <h1 class="title-slide">Reduza 45% dos seus custos com frete</h1>
+                        <p class="sub-slide">Ultilize o <span style="font-weight: 700;"> TMS Embarcador</span> mais completo do mercado.</p>
                         <Button class="button-slide">saiba mais</Button>
                     </div>
                 </div>
-                <div class="slide">
+                <div id="slide-2"  class="slide">
                     <div class="slide-content">
-                        <h1>Título do Slide 2</h1>
-                        <p>Descrição do Slide 2.</p>
+                        <h1 class="title-slide">Tenha controle total do faturamento por motorista e enttrega</h1>
+                        <p class="sub-slide">A gestão completa das <span style="font-weight: 700;"> suas entregas em um único lugar. </span> </p>
                         <Button class="button-slide">saiba mais</Button>
                     </div>
                 </div>
-                <div class="slide">
+                <div id="slide-3"  class="slide">
                     <div class="slide-content">
-                        <h1>Título do Slide 2</h1>
-                        <p>Descrição do Slide 2.</p>
+                        <h1 class="title-slide">Tenha uma nova modalidade de negócio para o seu marktplace</h1>
+                        <p class="sub-slide">Atraia mais sellers oferecendo <span style="font-weight: 700;">fretes competitivos. </span></p>
                         <Button class="button-slide">saiba mais</Button>
                     </div>
                 </div>
-                <div class="slide">
+                <div id="slide-4"  class="slide">
                     <div class="slide-content">
-                        <h1>Título do Slide 2</h1>
-                        <p>Descrição do Slide 2.</p>
+                        <h1 class="title-slide">Melhore a experiência de compra do seu cliente</h1>
+                        <p class="sub-slide">Ofereça acompanhamento em tempo real com <span style="font-weight: 700;">autoatendimento.</span></p>
                         <Button class="button-slide">saiba mais</Button>
                     </div>
                 </div>
@@ -99,17 +111,324 @@
                 <button class="slide-next">&#10095;</button>
             </div>
         </Section>
-        <Section class="teste1">
+
+
+        <Section class="Tech-de-ponta-a-ponta">
+
+            <div class="tech-box">
+                <div class="title-text-tech">
+                    <h1 class="title-tech">
+                        Tecnologia de ponta a ponta para gestão logística da sua venda digital.
+                    </h1>
+                    <p class="sub-title-tech" style="color: #3873EA;">
+                        Garanta o melhor desempenho das suas vendas com uma gestão 100% integrada.
+                    </p>
+                    <p style="font-size: 0.8rem;">
+                        Nossas soluções de TMS embarcador, TMS transportador, WMS,
+                        Live Tracking com atendimento via chatbot estão conectadas 
+                        aos maiores players do mercado, proporcionando performance
+                        e eficiência para sua logística.
+                    </p>
+                </div>
+                <div class="image-gif">
+                    <Img class="tech-universo-gif" src="./images/Main/Tech-ponta-a-ponta/universo-tech.gif"></Img>
+                </div>
+            </div>
+            <div class="indicadores-tech">
+                    
+                <div class="indicador-text-number"> 
+                    <h1 style="color: #0074ff; font-size: 3rem; font-weight: 600;">+700</h1>
+                    <p style="font-size: 0.9rem;">Transportadores conectados.</p>
+                </div>
+                <div class="indicador-text-number"> 
+                    <h1 style="color: #0074ff; font-size: 3rem; font-weight: 600;">
+                        +14
+                    </h1>
+                    <p style="font-size: 0.9rem;">Hubs conectados</p>
+                </div>
+                <div class="indicador-text-number"> 
+                    <h1 style="color: #0074ff; font-size: 3rem; font-weight: 600;">+12</h1>
+                    <p style="font-size: 0.9rem;">Marketplaces conectados.</p>
+                </div>
+                <div class="indicador-text-number"> 
+                    <h1 style="color: #0074ff; font-size: 3rem; font-weight: 600;">+12</h1>
+                    <p style="font-size: 0.9rem;">ERPs conectados.</p>
+                </div>
+
+            </div>
 
         </Section>
-        <Section class="teste2">
+                
+        <Section class="conversao-de-venda">
+
+            <div class="conversao-box">
+
+                <div class="">
+                    <img id="animated-image" class="gif-phone" src="./images/Main/conversao-de-venda/conversao-vendas.gif" alt="">
+                </div>
+                <div class="text-conversao">
+                    <h1 class="title-conversao">
+                        Melhore sua conversão de venda:
+                    </h1>
+                    <h2 class="subtitle-conversao">
+                        Tenha agilidade e eficiência na gestão de fretes.
+                    </h2>
+                    <ul class="list-icons-conversao">
+                        <li class="icon-box">
+                            <img class="icon-conversao" src="./images/Main/conversao-de-venda/calculo-de-frete.svg" alt="">
+                            <span class="icon-description">
+                                Cálculo de frete mais preciso e com resposta rápida
+                            </span>
+                        </li>
+                        <li class="icon-box">
+                            <img class="icon-conversao" src="./images/Main/conversao-de-venda/contingencia-da-cotacao.svg" alt="">
+                            <span class="icon-description">
+                                Cálculo de frete mais preciso e com resposta rápida
+                            </span>
+                        </li>
+                        <li class="icon-box">
+                            <img class="icon-conversao" src="./images/Main/conversao-de-venda/reducao-do-prazo.svg" alt="">
+                            <span class="icon-description">
+                                Cálculo de frete mais preciso e com resposta rápida
+                            </span>
+                        </li>
+                        <li class="icon-box">
+                            <img class="icon-conversao" src="./images/Main/conversao-de-venda/novas-integracoes.svg" alt="">
+                            <span class="icon-description">
+                                Cálculo de frete mais preciso e com resposta rápida
+                            </span>
+                        </li>
+                        <li class="icon-box">
+                            <img class="icon-conversao" src="./images/Main/conversao-de-venda/integracao-com-sorter.svg" alt="">
+                            <span class="icon-description">
+                                Cálculo de frete mais preciso e com resposta rápida
+                            </span>
+                        </li>
+                    </ul>
+                    <button class="button-conversao">
+                        saiba mais
+                    </button>
+                </div>
+
+            </div>
 
         </Section>
-        <Section class="teste3">
+        <section class="gerencie-suas-entregas">
+            <div class="gerencie-box">
+                <h1 class="title-gerencie">Gerencie suas entregas em um único lugar:</h1>
+                <h2 class="sub-gerencie">Dashboards personalizados para maior visibilidade da sua gestão de fretes.</h2>
+                <div class="image-icon-slide">
+                    <div class="image-gerencie-box">
+                        <img class="image-gerencie" src="./images/Main/gerencie-suas-entregas/banner-sessao5_1.png" alt="">
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel">
+                                <div class="slide-venda">
+                                    <div class="content-slide-venda">
+                                    <img class="image-slide-venda" src="./images/Main/gerencie-suas-entregas/slider/personalizacao.svg" alt="Slide 1">
+                                    <h3 class="description-slide-venda">Personalização dos envios de ocorrências</h3>
+                                    <button class="button-slide-venda"> fale com um especialista</button>
+                                </div>
+                            </div>
+                            <div class="slide-venda">
+                                <div class="content-slide-venda">
+                                <img class="image-slide-venda" src="./images/Main/gerencie-suas-entregas/slider/fluxo-do-pedido.svg" alt="Slide 2">
+                                <h3 class="description-slide-venda">Gerenciamento do fluxo do pedido.</h3>
+                                <button class="button-slide-venda"> fale com um especialista</button>
+                                </div>
+                            </div>
+                            <div class="slide-venda">
+                                <div class="content-slide-venda">
+                                <img class="image-slide-venda" src="./images/Main/gerencie-suas-entregas/slider/geracao-de-ctes.svg" alt="Slide 3">
+                                <h3 class="description-slide-venda">Geração de CTes para grandes volumes.</h3>
+                                <button class="button-slide-venda"> fale com um especialista</button>
+                                </div>
+                            </div>
+                            <div class="slide-venda">
+                                <div class="content-slide-venda">
+                                <img class="image-slide-venda" src="./images/Main/gerencie-suas-entregas/slider/conciliacao.svg" alt="Slide 4">
+                                <h3 class="description-slide-venda">Conciliação dos custos de frete.</h3>
+                                <button class="button-slide-venda"> fale com um especialista</button>
+                                </div>
+                            </div>
+                            <div class="slide-venda">
+                                <div class="content-slide-venda">
+                                <img class="image-slide-venda" src="./images/Main/gerencie-suas-entregas/slider/leitura-de-arquivos.svg" alt="Slide 5">
+                                <h3 class="description-slide-venda" >Leitura de arquivos transportador <span style="color: black; font-weight: bold;">conectada ao SEFAZ.</span></h3>
+                                <button class="button-slide-venda"> fale com um especialista</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <div class="arrow-venda left-venda">&lt;</div>
+                            <div class="arrow-venda right-venda">&gt;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        </Section>
+        <section class="melhores-opcoes-frete">
+            <div class="frete-box">
+                <div class="text-icons">
+                    <h1 class="title-fretes" >Ofereça as melhores
+                        opções de frete:​</h1>
+                    <h2 class="subtitle-fretes">Reduza o abandono de carrinhos com fretes competitivos.</h2>
+                    
+                    <div class="image-container-frete-mobile">
+                        <div class="image-box-frete">
+                            <img class="image-frete" src="./images/Main/melhores-opcoes-de-frete/melhores-fretes.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="box-list">
+                        <div class="icon-list">
+                            <i class ="icon-check far fa-check-circle"></i>
+                            <span class="text-icon">Cotação e gestão de fretes de multi CDs.</span>
+                        </div>
+                        <div class="icon-list">
+                            <i class="icon-check far fa-check-circle"></i>
+                            <span class="text-icon">Cálculo de frete com compensação de carbono.</span>
+                        </div>
+                        <div class="icon-list">
+                            <i class="icon-check far fa-check-circle"></i>
+                            <span class="text-icon">+800 tipos de regras de frete.</span>
+                        </div>
+                        <div class="icon-list">
+                            <i class="icon-check far fa-check-circle"></i>
+                            <span class="text-icon">Autonomia total na manutenção de tabelas.</span>
+                        </div>
+                        <div class="icon-list">
+                            <i class="icon-check far fa-check-circle"></i>
+                            <span class="text-icon">Processos para coletas em PUDO's através de First mile.</span>
+                        </div>
+                    </div>
+                    <button class="button-frete">
+                        fale com um especialista 
+                    </button>
+                </div>
+                <div class="image-container-frete">
+                    <div class="image-box-frete">
+                        <img class="image-frete" src="./images/Main/melhores-opcoes-de-frete/melhores-fretes.gif" alt="">
+                    </div>
+                </div>
 
+            </div>
+        </section>
 
+        <section class="garanta-a-satisfação-do-seu-cliente">
+
+            <div class="seu-cliente-box">
+                <div class="title-seu-cliente-box">
+                    <h1 class="title-seu-cliente">
+                        Garanta a satisfação do seu cliente:
+                    </h1>                    
+                </div>
+                <div class="seu-cliente-gif-box-mobile">
+                    <img class="seu-cliente-gif" src="./images/Main/garanta-a-satisfacao-do-seu-cliente/melhores-fretes.gif" alt="">
+                </div>
+                <div class="content-seu-cliente">
+                        <div class="seu-cliente-list-one">
+                            <div class="item-list-seu-cliente">
+                                <h3 class="title-item" style="color: #0074ff;">Acompanhamento de todas as etapas da entrega em tempo real.</h3>
+                                <span class="text-item">Mais visibilidade de todo o ciclo do pedido para você e para o seu cliente.</span>
+                            </div>
+                            <div class="item-list-seu-cliente">
+                                <h3 class="title-item" style="color: #0074ff;">App para motoristas com envio de mensagem da próxima entrega.</h3>
+                                <span class="text-item">Informação para o cliente e redução do uso do papel na entrega.</span>
+                            </div>
+                            <div class="item-list-seu-cliente">
+                                <h3 class="title-item" style="color: #0074ff;">Entrega agendada.</h3>
+                                <span class="text-item">Reduz os insucessos e melhora a experiência do cliente.</span>
+                            </div>
+                        </div>
+                        <div class="seu-cliente-gif-box">
+                            <img class="seu-cliente-gif" src="./images/Main/garanta-a-satisfacao-do-seu-cliente/melhores-fretes.gif" alt="">
+                        </div>
+                        <div class="seu-cliente-list-two">
+                            <div class="item-list-seu-cliente-two">
+                                <h3 class="title-item" style="color: #0074ff;">Monitoria de ocorrências.</h3>
+                                <span class="text-item">Informação enviada igual ao último status do TMS Transportador.</span>
+                            </div>
+                            <div class="item-list-seu-cliente-two">
+                                <h3 class="title-item" style="color: #0074ff;">Integração com Ondetah.</h3>
+                                <span class="text-item">Comunicação e informação em um único lugar.</span>
+                            </div>
+                            <div class="item-list-seu-cliente-two">
+                                <h3 class="title-item" style="color: #0074ff;">Tecnologia para compensação de carbono.</h3>
+                                <span class="text-item">Motor de cálculo de compensação por item do pedido.</span>
+                            </div>
+                        </div>
+                </div>
+                <button class="button-seu-cliente">fale com um especialista</button>
+            </div>
+
+        </section>
+
+        <section class="solucao-para-gestao-de-frete">
+            <div class="solucao-para-gestao-de-frete-box-one">
+                <h1 class="title-box-one" style="color: #0074ff;">
+                    Utilize a mais completa solução para gestão de fretes
+                    e garanta para o seu e-commerce a eficiência dos nossos números.
+                </h1>
+                <img src="./images/Main/solucao-frete/solucao-frete-image.png" alt="" class="image-box-one">
+            </div>
+            <div class="solucao-para-gestao-de-frete-box-two">
+                <div class="box-two-itens-one">
+                    <div class="item-box-two">
+                        <h2 class="title-box-two">28MM</h2>
+                        <span class="text-box-two">rastreamentos por mês</span>
+                    </div>
+                    <div class="item-box-two">
+                        <h2 class="title-box-two">5MM</h2>
+                        <span class="text-box-two">cotações de cálculo por mês</span>
+                    </div>
+                    <div class="item-box-two">
+                        <h2 class="title-box-two">15%</h2>
+                        <span class="text-box-two">saving de conciliação</span>
+                    </div>
+                </div>
+                <div class="box-two-itens-two">
+                    <div class="item-box-two">
+                        <h2 class="title-box-two">5.8Mil</h2>
+                        <span class="text-box-two">motoristas conectados via app</span>
+                    </div>
+                    <div class="item-box-two">
+                        <h2 class="title-box-two">30MM</h2>
+                        <span class="text-box-two">gestão de entregas</span>
+                    </div>
+                    <div class="item-box-two">
+                        <h2 class="title-box-two">10MM</h2>
+                        <span class="text-box-two">processamentos por mês</span>
+                    </div>
+                </div>
+                <button class="button-solucoes"> 
+                    <a target="_blank" href="https://calendly.com/natielen-campos/ux-group-voce?">agende com um especialista</a>
+                </button>
+            </div>
+        </section>
+
+        <section class="cta-reduza-seus-gastos">
+            <div class="box-cta">
+                <h1 class="title-cta">
+                    Reduza seus gastos com SAC através da comunicação com o seu cliente.
+                </h1>
+                <span class="description-cta">
+                    Integração com tecnologias ERP, TMS Embarcador e TMS Transportador, com suporte 24h através do autoatendimento.
+                </span>
+                <div class="box-buttons">
+                    <button class="button-one">
+                        solicite uma demo
+                    </button>
+                    <button class="button-two">
+                        agende uma reunião
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section style="height: 20vh;">
+
+        </section>
 
     </Main>
     <footer></footer>

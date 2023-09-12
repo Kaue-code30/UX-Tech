@@ -2,8 +2,7 @@
 
 .main-menu{
     display: flex;
-    justify-content: end ;
-    width: 90%;
+    width: 100%;
     z-index: 100;
 }
 
@@ -11,15 +10,17 @@
     display: none;
     font-size: 24px;
     cursor: pointer;
+    color: #fff;
 }
 
 .menu-list {
     display: flex;
     list-style: none;
     margin: 0;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 0.9rem;
+    font-weight: 300;
     padding: 0;
+    gap: 1px;
 }
 
 .menu-list li {
@@ -28,22 +29,17 @@
 }
 
 .menu-list a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
-    padding: 10px;
     display: block;
 
-}
-
-.menu-list a:hover {
-    color: #0173fe;
 }
 
 /* Estilos do submenu */
 .submenu-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #000;
     padding-top: 10px;
     min-width: 200px;
 }
@@ -56,7 +52,7 @@
 .submenu-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #000;
     padding-top: 10px;
     min-width: 200px;
 }
@@ -79,9 +75,16 @@
     padding: 10px;
 }
 
+.localizaz-tech{
+    display: none;
+}
 
 /* Estilos responsivos */
 @media screen and (max-width: 768px) {
+    .main-menu{
+        display: flex;
+        justify-content: end;
+    }
     .menu-toggle {
         display: block;
     }
@@ -93,16 +96,24 @@
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #FFF;
-        padding-top: 2%;
-        padding-left: 8%;
+        background-color: #000;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        padding-left: 6%;
     }
 
     .menu-list.active {
         display: flex;
+        padding-left: 8%;
     }
+
+    .localizaz-tech{
+        display: flex;
+    }
+    
 
     .menu-list li {
         margin: 0;
     }
+    
 }

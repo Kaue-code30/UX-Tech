@@ -1,0 +1,100 @@
+.conversao-de-venda{
+    display: flex;
+    align-items:center ;
+    padding-left: 8%;
+    padding-top: 5%;
+    height: 110vh;
+
+}
+
+.conversao-box{
+   display: grid;
+   width: 100%;
+   grid-template-areas: "image text";
+   grid-template-columns: 35% 65%;
+    
+}
+
+.gif-phone{
+    grid-area: image;
+    width: 70%;
+}
+
+.text-conversao{
+    padding-top: 5%;
+    grid-area: text;
+}
+
+.title-conversao{
+    font-size: 2.5rem;
+    width: 100%;
+}
+.subtitle-conversao{
+    font-size: 1.2rem;
+    color: #0074FF;
+}
+
+
+.icon-box{
+    display: flex;
+    align-items: center;
+}
+
+.list-icons-conversao{
+    display: flex;
+    flex-direction: column;
+    margin-left: -20px;
+}
+
+.icon-conversao{
+    width: 10%;
+
+}
+.button-conversao{
+    font-weight: 300;
+    font-size: 1rem;
+    color: #FFF;
+    border-radius: 100px;
+    border: none;
+    background-color: #0074FF;
+    height: 8%;
+    width: 18%;
+}
+
+@media screen and (max-width: 768px) {
+    .conversao-de-venda{
+        height: 100vh;
+        padding-bottom: 20%;
+    }
+    .conversao-box{
+        display: flex;
+    }
+    .title-conversao{
+        width: 90%;
+        font-size: 2rem;
+        line-height: 1.2em;
+    }
+    .subtitle-conversao{
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    .icon-conversao{
+        width: 25%;
+    }
+    .list-icons-conversao{
+        margin-left: -5%;
+    }
+    .icon-description{
+        width: 70%;
+        font-size:0.8Rem;
+    }
+    .button-conversao{
+        width: 90%;
+    }
+
+    .gif-phone{
+        display: none;
+    }
+}
+

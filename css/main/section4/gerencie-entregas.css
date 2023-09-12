@@ -1,0 +1,185 @@
+.gerencie-suas-entregas{
+    padding: 5%;
+    height: 115vh;
+    background-color: #0074ff;
+}
+
+.gerencie-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.title-gerencie{
+    font-size: 2.5rem;
+}
+
+.sub-gerencie{
+    color:#fff;
+    font-size: 1.3rem;
+}
+
+.image-icon-slide{
+
+    display: grid;
+    grid-template-areas: "image text";
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    justify-content: center;
+
+}
+
+
+.carousel-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slide-venda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centralizar o conteúdo verticalmente */
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    height: 50vh;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+}
+
+.image-slide-venda{
+    width: 30%;
+}
+.content-slide-venda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 10%;
+}
+
+.description-slide-venda{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+.button-slide-venda{
+    background-color: #00000000;
+    border: 1px solid #000000;
+    padding: 1%;
+    border-radius: 100px;
+    width: 45%;
+}
+.button-slide-venda:hover{
+    background-color: #0074ff;
+    color: #fff;
+    border: 1px solid #0074ff;
+}
+
+
+/* ... seu CSS existente ... */
+
+.carousel-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 51%;
+    width: 43%;
+}
+
+.arrow-venda {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.left-venda {
+    margin-left: 20px;
+}
+
+.right-venda {
+    margin-right: 20px;
+}
+
+
+.image-gerencie-box{
+    padding-top: 5%;
+    grid-area: image;
+    padding-left: 10%;
+}
+.image-gerencie{
+    width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .gerencie-suas-entregas{
+        height: 120vh;
+        padding-top:20%;
+    }
+    .gerencie-box{
+        width: 100%;
+    }
+    .image-icon-slide{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+    .title-gerencie{
+        font-size: 1.9rem;    
+    }
+    .slide-venda{
+        width: 100vh;
+        height: 45vh;
+        padding: 0;
+    }
+    .carousel-nav{
+        left: 0%;
+        width: 100%;
+    }
+    .description-slide-venda{
+        font-weight: 500;
+        font-size: 0.9rem;
+        width: 80%;
+    }
+    .button-slide-venda{
+        font-size: 0.8rem;
+        padding: 2%;
+        width: 70%;
+    }
+    .image-slide-venda{
+        width: 40%;
+    }
+
+    
+}
