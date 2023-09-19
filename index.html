@@ -21,12 +21,15 @@
     <link rel="stylesheet" href="./css/main/section6/satifacaoCliente.css">
     <link rel="stylesheet" href="./css/main/section7/solucao-frete.css">
     <link rel="stylesheet" href="./css/main/section8/cta.css">
+    <link rel="stylesheet" href="./css/main/section9/overview.css">
+    <link rel="stylesheet" href="./css/main/section10/depoimentos.css">
+    <link rel="stylesheet" href="./css/footer/footer.css">
     <script src="./JS/menuHeader/index.js"></script>
     <script src="./JS/Main/slider-home/index.js"></script>
     <script src="./JS/Main/conversao-de-vendas/index.js"></script>
     <script src="./JS/Main/sliderConversao/index.js"></script>
-
-
+    <script src="./JS/overview/index.js"></script>
+    <script src="https://kit.fontawesome.com/324b71f187.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <Header>
@@ -69,7 +72,7 @@
 
     <Main>
 
-        <Section class="slider">
+        <Section class="slider" id="home">
             <div class="slider-nav-prev">
                 <button class="slide-prev">&#10094;</button>
             </div>
@@ -183,25 +186,25 @@
                         <li class="icon-box">
                             <img class="icon-conversao" src="./images/Main/conversao-de-venda/contingencia-da-cotacao.svg" alt="">
                             <span class="icon-description">
-                                Cálculo de frete mais preciso e com resposta rápida
+                                Contingência da cotação de fretes dos Correios.
                             </span>
                         </li>
                         <li class="icon-box">
                             <img class="icon-conversao" src="./images/Main/conversao-de-venda/reducao-do-prazo.svg" alt="">
                             <span class="icon-description">
-                                Cálculo de frete mais preciso e com resposta rápida
+                                Redução do prazo de entrega com machine learning.
                             </span>
                         </li>
                         <li class="icon-box">
                             <img class="icon-conversao" src="./images/Main/conversao-de-venda/novas-integracoes.svg" alt="">
                             <span class="icon-description">
-                                Cálculo de frete mais preciso e com resposta rápida
+                                Novas integrações com marketplace sem custo.
                             </span>
                         </li>
                         <li class="icon-box">
                             <img class="icon-conversao" src="./images/Main/conversao-de-venda/integracao-com-sorter.svg" alt="">
                             <span class="icon-description">
-                                Cálculo de frete mais preciso e com resposta rápida
+                                Integração direta com sorter para automação de operações.
                             </span>
                         </li>
                     </ul>
@@ -420,18 +423,119 @@
                         solicite uma demo
                     </button>
                     <button class="button-two">
-                        agende uma reunião
+                        <a target="_blank" href="https://calendly.com/natielen-campos/ux-group-voce?month=2023-09">agende uma reunião</a>
                     </button>
                 </div>
             </div>
         </section>
 
-        <section style="height: 20vh;">
+        <section class="overview">
 
+            <div class="overview-title-box">
+                <h1 class="title-overview" >
+                    Overview  <span style="color: #0074ff;">integrações.</span> 
+                </h1>
+                <h2 class="sub-overview">
+                    A <span style="font-weight: 700;">UX</span>  possui conexão com as principais plataformas do mercado, garantindo informações, gestão e integração para todo o e-commerce.
+                </h2>
+                <span class="text-overview" style="font-weight: 700;">A UX ainda conta com tecnologias próprias para garantir uma logística altamente gerenciável.</span>
+            </div>
+            <div class="select-overview">
+                <ul>
+                    <li class="item-select active" data-img-id="1">
+                        Transportadores
+                    </li>
+                    <li class="item-select" data-img-id="2">
+                        HUBs
+                    </li>
+                    <li class="item-select" data-img-id="3">
+                        Canais de Vendas
+                    </li>
+                    <li class="item-select" data-img-id="4">
+                        ERPs
+                    </li>
+                </ul>
+                <div class="box-image-overview">
+                    <img class="img-selected active" data-img-id="1" src="./images/Main/overview/TRANSPORTADORES-1.png" alt="">
+                    <img class="img-selected" data-img-id="2" src="./images/Main/overview/HUBS_1.png" alt="">
+                    <img class="img-selected" data-img-id="3" src="./images/Main/overview/CANAIS-DE-VENDA-1-1.png" alt="">
+                    <img class="img-selected" data-img-id="4" src="./images/Main/overview/ERPS-2.png" alt="">
+                </div>
+            </div>
         </section>
 
+        <section class="depoimentos">
+            <div class="box-depoimentos">
+                <h1>
+                   Feedback dos nossos  <span class="text-destaque-title-depoimento">parceiros.</span><span style="color: #000;">|</span>
+                </h1>
+                <i class="fas fa-quote-left"></i>
+                <span class="depoimento-text">
+                    Super parceria com a UX, muito bacana, 
+                    que pra gente é muito importante pra Restoque,
+                    e a UX tem nos atendido de forma excelente.
+                    A equipe é voltada totalmente para o que a
+                    gente precisa na velocidade, no tempo e na
+                    qualidade do serviço que prestam.O time está
+                    de parabéns! Uma excelente parceria que estamos
+                    tendo.
+                </span>
+
+                <div class="item-person-depoimento">
+                    <img class="image-person-depoimento" src="./images/Main/depoimentos/logo-veste.png" alt="">
+                    <h3 class="name-person-depoimentos">  	
+                        Marcelo Rafael
+                    </h3>
+                </div>
+            </div>
+        </section>
     </Main>
-    <footer></footer>
+    <footer>
+
+        <div id="contato" class="footer-box">
+            <div class="logo-footer-box">
+                <img class="logo-footer" src="./images/footer/logo-uxs.png" alt="">
+            </div>
+            <div class="infos-box">
+                <div class="infos-itens-one">
+                    <h3>
+                        Nossas Verticais
+                    </h3>
+                    <a target="_blank" href="https://uxff.com.br/">UX Fulfillment</a>
+                    <a target="_blank" href="https://uxsolutions.com.br/">UX Solutions</a>
+                    <a target="_blank" href="https://uxconnect.com.br/">UX Connect</a>
+                    <a target="_blank" href="https://uxdelivery.com.br/">UX Delivery</a>
+                </div>
+                <div class="infos-itens-two">
+                    <h3>
+                        UX Solutions
+                    </h3>
+                    <a href="#home">Home</a>
+                    <a target="_blank" href="https://uxsolutions.com.br/fusion/">E-commerce</a>
+                    <a target="_blank" href="https://uxsolutions.com.br/shipn/">Marketplace</a>
+                    <a target="_blank" href="https://uxsolutions.com.br/aion/">Frete dinâmico</a>
+                    <a target="_blank" href="https://uxsolutions.com.br/trux/">TMS</a>
+                    <a href="#contato">Contato</a>
+                </div>
+            </div>
+            <div class="form-box">
+                <h3>
+                    Contato
+                </h3>
+                <div class="form">
+                    <input type="text" name="" placeholder="Nome*" required id="">
+                    <input type="email" name="" placeholder="Email*" required id="">
+                    <input type="tel" name="" placeholder="Telefone*" required id="">
+                    <input type="text" name="" placeholder="Empresa*" required id="">
+                    <input class="form-message" type="text" name="" placeholder="Mensagem"  id="">
+                    <Button class="button-form">
+                        enviar
+                    </Button>
+                </div>
+            </div>
+        </div>
+
+    </footer>
     
 </body>
 </html>

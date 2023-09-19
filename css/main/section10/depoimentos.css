@@ -1,0 +1,73 @@
+.depoimentos{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    background-color: #0074ff;
+    padding-top: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.box-depoimentos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 30%;
+    gap: 20%;
+}
+.box-depoimentos > h1{
+   color: #FFF;
+   font-size: 3rem;
+}
+.text-destaque-title-depoimento{
+    -webkit-text-stroke: 1.5px white;
+    color: #4086ED;
+}
+.fas{
+    display: flex;
+    justify-content: flex-start;
+    color: #FFF;
+    font-size: 2.5rem;
+    width: 100%;
+}
+.depoimento-text{
+    color: #000;
+    font-weight: 400;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.name-person-depoimentos{
+    font-size: 1.4rem;
+    color: #FFF;
+}
+
+.item-person-depoimento{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2%;
+}
+
+.image-person-depoimento{
+    width: 8%;
+    color: #FFF;
+    border-radius: 100px;
+}
+
+@media (max-width: 768px) {
+    .depoimentos{
+        height: 80vh;
+        padding-top: 25%;
+    }
+    .box-depoimentos > h1 {
+        font-size: 2.2rem;
+    }
+    .item-person-depoimento{
+        gap: 8%;
+    }
+    .image-person-depoimento{
+        width: 20%;
+    }
+}

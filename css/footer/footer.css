@@ -1,0 +1,89 @@
+footer{
+    background-color: #000;
+    height: 80vh;
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+.footer-box{
+    display: grid;
+    grid-template-areas: "logo info form";
+    grid-template-columns: 20% 30% 50%;
+    height: 100%;
+}
+
+.logo-footer-box{
+    grid-area: logo;
+}
+.logo-footer{
+    width:50%;
+}
+
+.infos-box{
+    display: flex;
+    color: #fff;
+    grid-area: info;
+    font-weight: 400;
+    gap: 10%;
+}
+.infos-itens-one{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    height: 100%;
+}
+.infos-itens-two{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+a:hover{
+    color:#0074ff;
+    transition: 0.3s;
+}
+.form-box{
+    grid-area: form;
+    color: #fff;
+    padding-left: 5%;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-top: 2%;
+    gap: 2%;
+}
+.form > input{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    padding: 2%;
+    background-color: #00000000;
+    border: solid 1px #fff;
+    box-shadow: none;
+    margin-bottom: 2%;
+    color: #FFF;
+}
+.form-message{
+    width: 92% !important;
+    padding: 3% !important;
+}
+.button-form{
+    width: 92%;
+    padding: 2%;
+    background-color: #FFF;
+    border-radius: 100px;
+    box-shadow: none;
+    border: none;
+}
+.button-form:hover{
+    background-color: #323232;
+    color: #FFF;
+    transition: 0.4s;
+}

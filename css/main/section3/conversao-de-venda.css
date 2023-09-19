@@ -1,9 +1,10 @@
 .conversao-de-venda{
     display: flex;
     align-items:center ;
-    padding-left: 8%;
-    padding-top: 5%;
-    height: 110vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 90vh;
+    padding-bottom: 10%;
 
 }
 
@@ -11,7 +12,7 @@
    display: grid;
    width: 100%;
    grid-template-areas: "image text";
-   grid-template-columns: 35% 65%;
+   grid-template-columns: 40% 60%;
     
 }
 
@@ -32,12 +33,14 @@
 .subtitle-conversao{
     font-size: 1.2rem;
     color: #0074FF;
+    padding-bottom: 2%;
 }
 
 
 .icon-box{
     display: flex;
     align-items: center;
+    margin-top: -15px;
 }
 
 .list-icons-conversao{
@@ -47,7 +50,7 @@
 }
 
 .icon-conversao{
-    width: 10%;
+    width: 13%;
 
 }
 .button-conversao{
@@ -63,11 +66,15 @@
 
 @media screen and (max-width: 768px) {
     .conversao-de-venda{
-        height: 100vh;
-        padding-bottom: 20%;
+        display: flex;
+        align-items: flex-start;
+        height: 85vh;
+        padding-bottom: 5%;
+        padding: 7%;
     }
     .conversao-box{
         display: flex;
+        justify-content: space-evenly;
     }
     .title-conversao{
         width: 90%;
