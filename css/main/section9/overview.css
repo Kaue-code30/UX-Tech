@@ -177,3 +177,10 @@
         padding-top: 10% !important;
     }
 }
+
+@media (max-width: 600px) {
+    .overview{
+        height: 150vh;
+        padding-top: 40%;
+    }
+}

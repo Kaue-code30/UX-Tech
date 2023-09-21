@@ -1,10 +1,11 @@
-.garanta-a-satisfação-do-seu-cliente{
-    height: 110vh;
+.garanta-a-satisfação-do-seu-cliente {
+    height: auto; /* Alterado para altura automática */
     background-color: #FFF;
-    padding-top: 3%;
+    padding: 3% 0; /* Alterado o padding-top e removido o padding-bottom */
+    padding-bottom: 5%;
 }
 
-.seu-cliente-box{
+.seu-cliente-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,18 +13,18 @@
     gap: 3%;
 }
 
-.title-seu-cliente-box{
+.title-seu-cliente-box {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10%;
 }
 
-.title-seu-cliente{
+.title-seu-cliente {
     font-size: 2.5rem;
 }
 
-.content-seu-cliente{
+.content-seu-cliente {
     display: grid;
     grid-template-areas: "text-one image text-two";
     grid-template-columns: 20% 60% 20%;
@@ -31,48 +32,52 @@
     padding-right: 9%;
 }
 
-.seu-cliente-list-one{
+.seu-cliente-list-one {
     display: flex;
     flex-direction: column;
-    align-items: center;height: 100%;
+    align-items: center;
     justify-content: center;
     gap: 20%;
     grid-area: text-one;
 }
-.item-list-seu-cliente{
+
+.item-list-seu-cliente {
     display: flex;
     flex-direction: column;
     height: 10%;
     gap: 10px;
 }
-.title-item{
+
+.title-item {
     font-size: 1.1rem;
     line-height: 25px;
 }
-.text-item{
+
+.text-item {
     font-size: 0.8rem;
 }
 
-.seu-cliente-list-two{
+.seu-cliente-list-two {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
     gap: 6%;
     grid-area: text-two;
 }
 
-.seu-cliente-gif-box{
+.seu-cliente-gif-box {
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: image;
 }
-.seu-cliente-gif{
+
+.seu-cliente-gif {
     width: 80%;
 }
-.button-seu-cliente{
+
+.button-seu-cliente {
     background-color: #0074ff;
     color: #FFF;
     font-weight: 400;
@@ -83,36 +88,38 @@
     width: 20%;
     margin-top: 1%;
 }
-.seu-cliente-gif-box-mobile{
+
+.seu-cliente-gif-box-mobile {
     display: none;
 }
 
 @media (max-width: 768px) {
-
-    .garanta-a-satisfação-do-seu-cliente{
-        height: 140vh;
+    .garanta-a-satisfação-do-seu-cliente {
+        height: auto; /* Alterado para altura automática */
         background-color: #FFF;
-        padding: 07%;
+        padding: 7%;
     }
 
-    .seu-cliente-box{
-        height: none;
+    .seu-cliente-box {
+        height: auto; /* Alterado para altura automática */
     }
 
-    .seu-cliente-gif-box{
+    .seu-cliente-gif-box {
         display: none;
     }
 
-    .title-seu-cliente{
+    .title-seu-cliente {
         font-size: 2rem;
     }
-    .seu-cliente-gif-box-mobile{
+
+    .seu-cliente-gif-box-mobile {
         display: flex;
         justify-content: center;
-        padding:0 ;
+        padding: 0;
         width: 100%;
     }
-    .content-seu-cliente{
+
+    .content-seu-cliente {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -120,53 +127,57 @@
         padding-top: 10%;
         margin-bottom: 10%;
     }
-    .seu-cliente-list-one{
+
+    .seu-cliente-list-one {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 20px;
-
     }
-    .item-list-seu-cliente{
+
+    .item-list-seu-cliente {
         display: flex;
         flex-direction: column;
         height: 10%;
         gap: 10px;
     }
-    .seu-cliente-list-two{
+
+    .seu-cliente-list-two {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
         gap: 20px;
-
     }
-    .item-list-seu-cliente-two{
+
+    .item-list-seu-cliente-two {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
-    .title-item{
+
+    .title-item {
         font-size: 1.2rem;
     }
-    .text-item{
+
+    .text-item {
         font-size: 0.9rem;
     }
-    .button-seu-cliente{
+
+    .button-seu-cliente {
         width: 100%;
         padding: 3%;
     }
-
 }
 
 @media (max-width: 400px) {
-    .garanta-a-satisfação-do-seu-cliente{
-        height: 160vh;
+    .garanta-a-satisfação-do-seu-cliente {
+        height: auto; /* Alterado para altura automática */
     }
 }
 
 @media (max-width: 360px) {
-    .garanta-a-satisfação-do-seu-cliente{
-        height: 175vh;
+    .garanta-a-satisfação-do-seu-cliente {
+        height: auto; /* Alterado para altura automática */
     }
 }

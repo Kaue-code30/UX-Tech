@@ -1,37 +1,34 @@
-.gerencie-suas-entregas{
+/* Estilos padrão */
+.gerencie-suas-entregas {
     padding: 5%;
-    height: 115vh;
+    height: auto; /* Alterado para altura automática */
     background-color: #0074ff;
 }
 
-.gerencie-box{
+.gerencie-box {
     display: flex;
     align-items: center;
     flex-direction: column;
-   
 }
 
-.title-gerencie{
+.title-gerencie {
     font-size: 2.5rem;
 }
 
-.sub-gerencie{
-    color:#fff;
+.sub-gerencie {
+    color: #fff;
     font-size: 1.3rem;
 }
 
-.image-icon-slide{
-
+.image-icon-slide {
     display: grid;
     grid-template-areas: "image text";
     grid-template-columns: 50% 50%;
     width: 100%;
     justify-content: center;
-
 }
 
-
-.carousel-container{
+.carousel-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -47,32 +44,34 @@
 
 .slide-venda {
     display: flex;
-    flex-direction: column;
+    flex-direction: column ;
     align-items: center;
-    justify-content: center; /* Centralizar o conteúdo verticalmente */
+    justify-content: center !important;
     text-align: center;
     padding: 20px;
     width: 90%;
-    height: 50vh;
+    height: auto; /* Alterado para altura automática */
     background-color: #fff;
-    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    height: 400px;
 }
 
-.image-slide-venda{
+.image-slide-venda {
     width: 30%;
 }
-.content-slide-venda{
+
+.content-slide-venda {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
     gap: 10%;
+    padding-top: 10%;
 }
 
-.description-slide-venda{
+.description-slide-venda {
     font-weight: 500;
     font-size: 1rem;
 }
@@ -82,19 +81,19 @@
     height: auto;
 }
 
-.button-slide-venda{
+.button-slide-venda {
     background-color: #00000000;
     border: 1px solid #000000;
     padding: 1%;
     border-radius: 100px;
     width: 45%;
 }
-.button-slide-venda:hover{
+
+.button-slide-venda:hover {
     background-color: #0074ff;
     color: #fff;
     border: 1px solid #0074ff;
 }
-
 
 /* ... seu CSS existente ... */
 
@@ -128,68 +127,72 @@
     margin-right: 20px;
 }
 
-
-.image-gerencie-box{
+.image-gerencie-box {
     padding-top: 5%;
     grid-area: image;
     padding-left: 10%;
 }
-.image-gerencie{
+
+.image-gerencie {
     width: 100%;
 }
 
-
-
 @media (max-width: 768px) {
-
-    .gerencie-suas-entregas{
-        height: 120vh;
-        padding-top:20%;
+    .gerencie-suas-entregas {
+        height: auto; /* Alterado para altura automática */
+        padding-top: 20%;
+        padding-bottom: 20%;
     }
-    .gerencie-box{
+
+    .gerencie-box {
         width: 100%;
     }
-    .image-icon-slide{
+
+    .image-icon-slide {
         display: flex;
         flex-direction: column;
         width: 100%;
         gap: 0;
     }
-    .title-gerencie{
-        font-size: 1.9rem;    
+
+    .title-gerencie {
+        font-size: 1.9rem;
     }
-    .slide-venda{
-        width: 100vh;
-        height: 45vh;
+
+    .slide-venda {
+        width: 100%;
+        height: auto; /* Alterado para altura automática */
         padding: 0;
     }
-    .carousel-nav{
+
+    .carousel-nav {
         left: 0%;
         width: 100%;
     }
-    .description-slide-venda{
+
+    .description-slide-venda {
         font-weight: 500;
         font-size: 0.9rem;
         width: 80%;
     }
-    .button-slide-venda{
+
+    .button-slide-venda {
         font-size: 0.8rem;
         padding: 2%;
         width: 70%;
     }
-    .image-slide-venda{
+
+    .image-slide-venda {
         width: 40%;
     }
-
-    
+    .content-slide-venda{
+        padding-top: 0;
+        padding-bottom: 10%;
+    }
 }
 
 @media (max-width: 400px) {
-
-    .gerencie-suas-entregas{
-        height: 135vh;
+    .gerencie-suas-entregas {
+        height: auto; /* Alterado para altura automática */
     }
 }
-
-
-

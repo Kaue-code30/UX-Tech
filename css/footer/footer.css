@@ -1,68 +1,67 @@
-footer{
+footer {
     background-color: #000;
-    height: 80vh;
-    padding-left: 10%;
-    padding-top: 10%;
+    height: 100vh;
+    padding: 10% 10% 0;
 }
 
-.footer-box{
+.footer-box {
     display: grid;
     grid-template-areas: "logo info form";
     grid-template-columns: 20% 30% 50%;
-    height: 100%;
+    gap: 2%;
+    text-align: left;
 }
 
-.logo-footer-box{
+.logo-footer-box {
     grid-area: logo;
 }
-.logo-footer{
-    width:50%;
+
+.logo-footer {
+    width: 50%;
+    max-width: 100%;
 }
 
-.infos-box{
+.infos-box {
     display: flex;
     color: #fff;
     grid-area: info;
     font-weight: 400;
     gap: 10%;
 }
-.infos-itens-one{
+
+.infos-itens-one,
+.infos-itens-two {
     display: flex;
     flex-direction: column;
     gap: 2%;
-    height: 100%;
 }
-.infos-itens-two{
-    display: flex;
-    flex-direction: column;
-    gap: 2%;
-    height: 100%;
-}
-a{
+
+a {
     text-decoration: none;
     color: #fff;
     font-weight: 300;
 }
-a:hover{
-    color:#0074ff;
+
+a:hover {
+    color: #0074ff;
     transition: 0.3s;
 }
-.form-box{
+
+.form-box {
     grid-area: form;
     color: #fff;
     padding-left: 5%;
+    text-align: left;
 }
-.form{
+
+.form {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
-    padding-top: 2%;
-    gap: 2%;
+    gap: 3%;
 }
-.form > input{
-    display: flex;
-    flex-wrap: wrap;
-    width: 48%;
+
+.form > input {
+    flex: 1;
     padding: 3%;
     background-color: #00000000;
     border: solid 1px #fff;
@@ -70,81 +69,85 @@ a:hover{
     margin-bottom: 2%;
     color: #FFF;
 }
-.form-message{
-    width: 98% !important;
-    padding: 3% !important;
+
+.form-message {
+    flex: 1;
+    padding: 3%;
+    width: 100% !important;
 }
-.button-form{
+
+.button-form {
     width: 100%;
     padding: 2%;
     background-color: #FFF;
     border-radius: 100px;
-    box-shadow: none;
     border: none;
 }
-.button-form:hover{
+
+.button-form:hover {
     background-color: #323232;
     color: #FFF;
     transition: 0.4s;
 }
 
-.assunto-forms{
+.assunto-forms {
     border: 1px solid white;
     background-color: #00000000;
-    width: 98%;
+    width: 100%;
     color: #fff;
     padding: 2%;
     margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
-
-    footer{
-        height: 120vh;
-        padding-top: 20%;
+    footer {
+        padding: 20% 10% 0;
     }
 
-    .logo-footer{
+    .logo-footer {
         width: 40%;
     }
 
-    .footer-box{
+    .footer-box {
         display: flex;
         flex-direction: column;
-        height: 100%;
     }
-    .infos-box{
-        display: flex;
-        flex-direction: column;
-        height: 30%;
+
+    .infos-box {
+        height: auto;
         padding-top: 10%;
     }
-    .form-box{
-        padding-top: 30%;
+
+    .form-box {
+        padding-top: 10%;
         padding-left: 0%;
     }
-    .form{
+
+    .form {
         width: 100%;
     }
-    .form > input{
+
+    .form > input {
         width: 90%;
-        padding:3%;
+        padding: 3%;
     }
-    .form-message{
-        width: 90% !important;
+
+    .form-message {
+        width: 100% !important;
         padding: 5% !important;
     }
-    
 }
 
 @media (max-width: 500px) {
-    footer{
-        height: 120vh;
+    footer {
+        padding-top: 20%;
     }
-    .assunto-forms{
-        width: 90% !important;
+
+    .assunto-forms {
+        width: 100% !important;
     }
-    .button-form{
-        width: 90%;
+
+    .button-form {
+        width: 100%;
     }
 }

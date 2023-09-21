@@ -1,150 +1,128 @@
-.solucao-para-gestao-de-frete{
+.solucao-para-gestao-de-frete {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 120vh;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%;
-    padding-bottom: 7%;
+    height: auto; /* Altura automática para ajustar ao conteúdo */
+    padding: 7% 10%; /* Simplificado o padding */
     background-color: #dedede;
 }
 
-.solucao-para-gestao-de-frete-box-one{
-    display: grid;
-    grid-template-areas: "title image";
-    grid-template-columns: 45% 55%;
-    height: 60%;
-    
-}
-
-.title-box-one{
-    display: flex;
-    padding-top: 10%;
-    font-size: 2.3rem;
-    grid-area: title;
-}
-.image-box-one{
-    display: flex;
+.solucao-para-gestao-de-frete-box-one {
+    display: flex; /* Mudança para flex-direction */
     align-items: center;
-    width: 100%;
-    grid-area: image;
+    height: auto; /* Altura automática */
 }
 
+.title-box-one {
+    font-size: 2rem;
+}
 
-.solucao-para-gestao-de-frete-box-two{
+.image-box-one {
+    width: 60%;
+    text-align: center; /* Alinhamento de texto */
+}
+
+.solucao-para-gestao-de-frete-box-two {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    gap: 20px; /* Espaçamento entre os elementos */
 }
-.box-two-itens-one{
+
+.box-two-itens-one,
+.box-two-itens-two {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-evenly;
-    padding-bottom: 5%;
-    gap: 10%;
-    width: 100%;
-}
-.box-two-itens-two{
-    display: flex;
-    align-items:center;
-    justify-content: space-evenly;
-    padding-bottom: 5%;
     gap: 10%;
     width: 100%;
 }
 
-.item-box-two{
+.item-box-two {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center; /* Alinhamento de texto */
 }
-.title-box-two{
+
+.title-box-two {
     font-size: 4rem;
 }
-.text-box-two{
-    text-align: center;
+
+.text-box-two {
     color: #0074ff;
     font-size: 16px;
 }
 
-.button-solucoes{
+.button-solucoes {
     background-color: #0074ff;
     border: none;
     border-radius: 100px;
     width: 25%;
     padding: 1%;
     margin-left: 2%;
+    text-align: center; /* Alinhamento de texto */
 }
-.button-solucoes > a{
+
+.button-solucoes > a {
     color: #FFF;
     font-size: 16px;
 }
 
-@media(max-width:768px) {
-
-    .solucao-para-gestao-de-frete{
-        padding: 07%;
-        padding-top: 0;
-        height: 170vh;
+@media (max-width: 768px) {
+    .solucao-para-gestao-de-frete {
+        padding: 7%;
+        height: auto; /* Altura automática */
     }
-    .solucao-para-gestao-de-frete-box-one{
-        display: flex;
-        flex-direction: column;
-        padding-top: 0%;
-        padding-bottom: 0%;
-        height: 30%;
-
-    }
-    .solucao-para-gestao-de-frete-box-two{
-        display: flex;
-        gap: 15px;
-    }
-    .box-two-itens-one{
-        display: flex;
-        flex-direction: column;
-    }
-    .box-two-itens-two{
-        display: flex;
-        flex-direction: column;
-    }
-    .title-box-one{
+    .title-box-one {
         font-size: 25px;
-        padding-top: 0;
     }
-    .box-two-itens-one{
-        display: flex;
-        gap: 30px;
-    }
-    .box-two-itens-two{
-        display: flex;
-        gap: 30px;
-    }
-    .title-box-two{
+    .title-box-two {
         font-size: 3.3rem;
     }
-    .button-solucoes{
+    .button-solucoes {
         margin-top: 10px;
         padding: 5%;
         width: 80%;
     }
-
+    .box-two-itens-two{
+        display: flex;
+        flex-direction: column;
+    }
+    .box-two-itens-one{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-@media(max-width:400px) {
-    .solucao-para-gestao-de-frete{
-        height: 180vh;
+@media (max-width: 400px) {
+    .solucao-para-gestao-de-frete {
+        height: auto; /* Altura automática */
+    }
+    .box-two-itens-two{
+        display: flex;
+        flex-direction: column;
+    }
+    .box-two-itens-one{
+        display: flex;
+        flex-direction: column;
     }
 }
 
 @media (max-width: 360px) {
-    .solucao-para-gestao-de-frete{
-        height: 195vh;
+    .solucao-para-gestao-de-frete {
+        height: auto; /* Altura automática */
+    }
+    .box-two-itens-two{
+        display: flex;
+        flex-direction: column;
+    }
+    .box-two-itens-one{
+        display: flex;
+        flex-direction: column;
     }
 }
-
-

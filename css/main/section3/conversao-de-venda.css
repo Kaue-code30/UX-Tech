@@ -1,59 +1,58 @@
-.conversao-de-venda{
+/* Estilos padrão */
+.conversao-de-venda {
     display: flex;
-    align-items:center ;
+    align-items: center;
     padding-left: 10%;
     padding-right: 10%;
     height: 90vh;
     padding-bottom: 10%;
-
 }
 
-.conversao-box{
-   display: grid;
-   width: 100%;
-   grid-template-areas: "image text";
-   grid-template-columns: 40% 60%;
-    
+.conversao-box {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "image text";
+    grid-template-columns: 40% 60%;
 }
 
-.gif-phone{
+.gif-phone {
     grid-area: image;
     width: 70%;
 }
 
-.text-conversao{
+.text-conversao {
     padding-top: 5%;
     grid-area: text;
 }
 
-.title-conversao{
+.title-conversao {
     font-size: 2.5rem;
     width: 100%;
 }
-.subtitle-conversao{
+
+.subtitle-conversao {
     font-size: 1.2rem;
     color: #0074FF;
     padding-bottom: 2%;
 }
 
-
-.icon-box{
+.icon-box {
     display: flex;
     align-items: center;
     margin-top: -15px;
 }
 
-.list-icons-conversao{
+.list-icons-conversao {
     display: flex;
     flex-direction: column;
     margin-left: -20px;
 }
 
-.icon-conversao{
+.icon-conversao {
     width: 13%;
-
 }
-.button-conversao{
+
+.button-conversao {
     font-weight: 300;
     font-size: 1rem;
     color: #FFF;
@@ -64,58 +63,69 @@
     width: 18%;
 }
 
+/* Estilos para telas menores (768px ou menos) */
 @media screen and (max-width: 768px) {
-    .conversao-de-venda{
+    .conversao-de-venda {
         display: flex;
         align-items: flex-start;
-        height: 85vh;
-        padding-bottom: 5%;
+        height: auto; /* Altere a altura para automática */
         padding: 7%;
     }
-    .conversao-box{
+
+    .conversao-box {
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
     }
-    .title-conversao{
+
+    .title-conversao {
         width: 90%;
         font-size: 2rem;
         line-height: 1.2em;
     }
-    .subtitle-conversao{
+
+    .subtitle-conversao {
         font-size: 1rem;
         width: 80%;
     }
 
-    .icon-conversao{
+    .icon-conversao {
         width: 25%;
     }
-    .list-icons-conversao{
+
+    .list-icons-conversao {
         margin-left: -5%;
     }
-    .icon-description{
+
+    .icon-description {
         width: 70%;
-        font-size:0.8Rem;
+        font-size: 0.8rem;
     }
-    .button-conversao{
+
+    .button-conversao {
         width: 90%;
     }
 
-    .gif-phone{
+    .gif-phone {
         display: none;
     }
 }
 
+/* Estilos para telas muito pequenas (400px ou menos) */
 @media screen and (max-width: 400px) {
-    .conversao-de-venda{
-        height: 90vh;
+    .conversao-de-venda {
+        height: auto; /* Altere a altura para automática */
         padding-top: 10%;
         padding-bottom: 20%;
     }
-    .conversao-box{
+
+    .conversao-box {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
-    
+
+    .gif-phone {
+        display: none;
+    }
 }
-
-
