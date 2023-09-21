@@ -161,3 +161,9 @@
     }
 
 }
+
+@media (max-width: 375px) {
+    .overview{
+        height: 150vh;
+    }
+}

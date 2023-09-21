@@ -97,7 +97,7 @@ a:hover{
     margin-bottom: 10px;
 }
 
-@media (max-width: 868px) {
+@media (max-width: 768px) {
 
     footer{
         height: 120vh;
@@ -135,4 +135,16 @@ a:hover{
         padding: 5% !important;
     }
     
+}
+
+@media (max-width: 768px) {
+    footer{
+        height: 150vh;
+    }
+    .assunto-forms{
+        width: 90% !important;
+    }
+    .button-form{
+        width: 90%;
+    }
 }

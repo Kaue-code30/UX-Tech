@@ -158,3 +158,9 @@
     }
 
 }
+
+@media (max-width: 375px) {
+    .garanta-a-satisfação-do-seu-cliente{
+        height: 200vh;
+    }
+}

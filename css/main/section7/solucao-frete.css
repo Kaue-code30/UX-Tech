@@ -135,4 +135,10 @@
 
 }
 
+@media(max-width:375px) {
+    .solucao-para-gestao-de-frete{
+        height: 225vh;
+    }
+}
+
 

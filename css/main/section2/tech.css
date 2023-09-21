@@ -126,3 +126,13 @@
     
 }
 
+@media(max-width:375px) {
+
+    .Tech-de-ponta-a-ponta{
+        height: 260vh;
+    }
+    .image-gif{
+        height: 100%;
+    }
+}
+

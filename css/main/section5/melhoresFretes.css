@@ -145,3 +145,15 @@
     }
 
 }
+
+@media (max-width: 375px) {
+    .melhores-opcoes-frete{
+        height: 130vh;
+    }
+    .frete-box{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+
+}

@@ -183,3 +183,11 @@
 
     
 }
+
+@media (max-width: 768px) {
+
+    .gerencie-suas-entregas{
+        height: 155vh;
+    }
+}
+

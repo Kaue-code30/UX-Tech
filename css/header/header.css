@@ -57,6 +57,9 @@ header{
     .image-box{
         width: 20%;
     }
+    .fas{
+        font-size: 1.9rem !important;
+    }
     header{
         height: 10%;
     }

@@ -105,3 +105,16 @@
     }
 }
 
+@media screen and (max-width: 375px) {
+    .conversao-de-venda{
+        height: 110vh;
+        padding-top: 10%;
+        padding-bottom: 20%;
+    }
+    .conversao-box{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
