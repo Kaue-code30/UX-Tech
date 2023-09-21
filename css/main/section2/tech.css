@@ -126,13 +126,17 @@
     
 }
 
-@media(max-width:375px) {
+@media(max-width:400px) {
 
     .Tech-de-ponta-a-ponta{
-        height: 260vh;
+        height: 205vh;
     }
     .image-gif{
         height: 100%;
     }
 }
-
+@media (max-width: 360px) {
+    .Tech-de-ponta-a-ponta{
+        height: 235vh;
+    }
+}

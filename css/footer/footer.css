@@ -137,9 +137,9 @@ a:hover{
     
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     footer{
-        height: 150vh;
+        height: 120vh;
     }
     .assunto-forms{
         width: 90% !important;

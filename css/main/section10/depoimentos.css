@@ -72,8 +72,8 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     .depoimentos{
-        height: 120vh;
+        height: 100vh;
     }
 }

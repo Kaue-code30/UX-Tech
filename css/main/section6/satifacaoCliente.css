@@ -159,8 +159,14 @@
 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .garanta-a-satisfação-do-seu-cliente{
-        height: 200vh;
+        height: 160vh;
+    }
+}
+
+@media (max-width: 360px) {
+    .garanta-a-satisfação-do-seu-cliente{
+        height: 175vh;
     }
 }

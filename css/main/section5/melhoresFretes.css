@@ -146,9 +146,9 @@
 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .melhores-opcoes-frete{
-        height: 130vh;
+        height: 100vh;
     }
     .frete-box{
         padding-top: 10%;
@@ -156,4 +156,10 @@
     }
 
 
+}
+
+@media (max-width: 360px) {
+    .melhores-opcoes-frete{
+        height: 115vh;
+    }
 }

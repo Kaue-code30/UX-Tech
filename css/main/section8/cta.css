@@ -106,8 +106,8 @@ button{
     
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .cta-reduza-seus-gastos{
-        height: 100vh;
+        height: 80vh;
     }
 }

@@ -105,9 +105,9 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .conversao-de-venda{
-        height: 110vh;
+        height: 90vh;
         padding-top: 10%;
         padding-bottom: 20%;
     }
@@ -117,4 +117,5 @@
     }
     
 }
+
 
