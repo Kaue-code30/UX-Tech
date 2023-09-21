@@ -1,7 +1,6 @@
 .depoimentos {
     display: flex;
     justify-content: center;
-    align-items: center;
     height: auto; /* Altura automática para ajustar ao conteúdo */
     background-color: #0074ff;
     padding: 7% 10%;
@@ -9,10 +8,9 @@
 
 .box-depoimentos {
     display: flex;
-    align-items: center;
     flex-direction: column;
     gap: 20px; /* Espaçamento entre os elementos */
-    text-align: center; /* Alinhamento de texto */
+    text-align: left; /* Alinhamento de texto */
 }
 
 .box-depoimentos > h1 {
