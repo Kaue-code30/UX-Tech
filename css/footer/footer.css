@@ -55,15 +55,15 @@ a:hover{
 .form{
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     padding-top: 2%;
     gap: 2%;
 }
 .form > input{
     display: flex;
     flex-wrap: wrap;
-    width: 45%;
-    padding: 2%;
+    width: 48%;
+    padding: 3%;
     background-color: #00000000;
     border: solid 1px #fff;
     box-shadow: none;
@@ -71,11 +71,11 @@ a:hover{
     color: #FFF;
 }
 .form-message{
-    width: 92% !important;
+    width: 98% !important;
     padding: 3% !important;
 }
 .button-form{
-    width: 92%;
+    width: 100%;
     padding: 2%;
     background-color: #FFF;
     border-radius: 100px;
@@ -86,4 +86,53 @@ a:hover{
     background-color: #323232;
     color: #FFF;
     transition: 0.4s;
+}
+
+.assunto-forms{
+    border: 1px solid white;
+    background-color: #00000000;
+    width: 98%;
+    color: #fff;
+    padding: 2%;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 868px) {
+
+    footer{
+        height: 120vh;
+        padding-top: 20%;
+    }
+
+    .logo-footer{
+        width: 40%;
+    }
+
+    .footer-box{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .infos-box{
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+        padding-top: 10%;
+    }
+    .form-box{
+        padding-top: 30%;
+        padding-left: 0%;
+    }
+    .form{
+        width: 100%;
+    }
+    .form > input{
+        width: 90%;
+        padding:3%;
+    }
+    .form-message{
+        width: 90% !important;
+        padding: 5% !important;
+    }
+    
 }

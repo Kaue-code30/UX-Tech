@@ -523,14 +523,21 @@
                     Contato
                 </h3>
                 <div class="form">
-                    <input type="text" name="" placeholder="Nome*" required id="">
-                    <input type="email" name="" placeholder="Email*" required id="">
-                    <input type="tel" name="" placeholder="Telefone*" required id="">
-                    <input type="text" name="" placeholder="Empresa*" required id="">
-                    <input class="form-message" type="text" name="" placeholder="Mensagem"  id="">
-                    <Button class="button-form">
-                        enviar
-                    </Button>
+                    <form class="form" action="http://localhost:8080/enviar-email" method="post">
+                        <input type="text" name="nome" placeholder="Nome*" required>
+                        <input type="email" name="email" placeholder="Email*" required>
+                        <input type="tel" name="telefone" placeholder="Telefone*" required>
+                        <input type="text" name="empresa" placeholder="Empresa*" required>
+                        <select class="assunto-forms" id="opcoes" name="assunto">
+                            <option value="opcao1">Quero saber sobre:</option>
+                            <option value="TMS Embarcador">TMS Embarcador</option>
+                            <option value="TMS Transportador">TMS Transportador</option>
+                            <option value="Solução para Marketplace">Solução para Marketplace</option>
+                            <option value="Live Tracking">Live Tracking</option>
+                        </select>
+                        <input class="form-message" type="text" name="mensagem" placeholder="Mensagem">
+                        <button class="button-form" type="submit">Enviar</button>
+                    </form>
                 </div>
             </div>
         </div>
