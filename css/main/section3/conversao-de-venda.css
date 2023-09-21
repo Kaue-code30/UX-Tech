@@ -2,10 +2,8 @@
 .conversao-de-venda {
     display: flex;
     align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    height: 90vh;
-    padding-bottom: 10%;
+    padding: 10% 10% 10% 10%;
+    min-height: 70vh;
 }
 
 .conversao-box {
@@ -17,7 +15,8 @@
 
 .gif-phone {
     grid-area: image;
-    width: 70%;
+    width: 100%;
+    max-width: 70%;
 }
 
 .text-conversao {
@@ -66,10 +65,7 @@
 /* Estilos para telas menores (768px ou menos) */
 @media screen and (max-width: 768px) {
     .conversao-de-venda {
-        display: flex;
-        align-items: flex-start;
-        height: auto; /* Altere a altura para automática */
-        padding: 7%;
+        padding: 7% 7% 7% 7%;
     }
 
     .conversao-box {
@@ -114,9 +110,7 @@
 /* Estilos para telas muito pequenas (400px ou menos) */
 @media screen and (max-width: 400px) {
     .conversao-de-venda {
-        height: auto; /* Altere a altura para automática */
-        padding-top: 10%;
-        padding-bottom: 20%;
+        padding: 10% 7% 20% 7%;
     }
 
     .conversao-box {

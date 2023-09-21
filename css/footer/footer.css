@@ -101,7 +101,13 @@ a:hover {
 
 @media (max-width: 768px) {
     footer {
+        height: auto;
         padding: 20% 10% 0;
+        padding-bottom: 20%;
+    }
+
+    .button-form{
+        width: 90%;
     }
 
     .logo-footer {
@@ -114,17 +120,23 @@ a:hover {
     }
 
     .infos-box {
+        display: flex;
+        flex-direction: column;
         height: auto;
         padding-top: 10%;
+        gap: 20px;
     }
 
     .form-box {
-        padding-top: 10%;
+        padding-top: 5%;
         padding-left: 0%;
     }
 
     .form {
+        display: flex;
+        flex-direction: column;
         width: 100%;
+        padding-top: 2%;
     }
 
     .form > input {
@@ -133,8 +145,11 @@ a:hover {
     }
 
     .form-message {
-        width: 100% !important;
+        width: 90% !important;
         padding: 5% !important;
+    }
+    .assunto-forms{
+        width: 90%;
     }
 }
 
@@ -144,10 +159,15 @@ a:hover {
     }
 
     .assunto-forms {
-        width: 100% !important;
+        width: 90% !important;
     }
 
     .button-form {
-        width: 100%;
+        width: 90%;
+    }
+    .infos-box{
+        display: flex;
+        flex-direction: column;
+        height: auto;
     }
 }
