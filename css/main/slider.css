@@ -132,13 +132,14 @@
         border-radius: 100px;
         width: 15%;
         height: 100%;
-        font-weight: 600;
+        font-weight: 500;
         margin-top: 10px;
     }
     .button-slide > button {
         background-color:#00000000;
         border: none;
         color: #000000;
+        font-size: 0.9rem;
     }
 
     .button-slide:hover{

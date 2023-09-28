@@ -40,6 +40,16 @@ footer {
     gap: 2%;
 }
 
+.infos-itens-two > a:hover {
+    color: #0173fe;
+    transition: 0.3s;
+}
+
+.infos-itens-one > a:hover {
+    color: #0173fe;
+    transition: 0.3s;
+}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -55,7 +65,7 @@ a {
     text-align: left;
     gap: 10px;
     height: auto;
-    padding-left: 5%;
+    padding-left: 10%;
 }
 
 .form {
@@ -156,16 +166,15 @@ a {
     }
 
     .form > input {
-        width: 90%;
+        width: 100%;
         padding: 3%;
     }
 
     .form-message {
-        width: 90% !important;
-        padding: 5% !important;
+        width: 100%;
     }
     .assunto-forms{
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -175,11 +184,11 @@ a {
     }
 
     .assunto-forms {
-        width: 90% !important;
+        width: 100%;
     }
 
     .button-form {
-        width: 90%;
+        width: 100%;
     }
     .infos-box{
         display: flex;
@@ -191,5 +200,17 @@ a {
 @media (max-width: 667px) {
     .form-message{
         padding-bottom: 40px !important;
+    }
+
+    .form-box{
+        width: 100%;
+    }
+
+    .form-box > input{
+        width: 100%;
+    }
+
+    .form{
+        width: 100%;
     }
 }
