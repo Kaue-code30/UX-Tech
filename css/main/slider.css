@@ -188,4 +188,12 @@
             z-index: 1;
             left: 40%;
         }
+        .button-slide{
+            color: #000000;
+            background-color: #FFF;
+            padding: 2%;
+        }
+        .button-slide > a{
+            color: #000000;
+        }
     }
