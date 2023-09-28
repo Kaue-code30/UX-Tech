@@ -239,3 +239,9 @@ header {
     
     
 }
+
+@media (max-width: 667px) {
+    .logo-header{
+        width: 130%;
+    }
+}
