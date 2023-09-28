@@ -140,6 +140,11 @@
 
 @media screen and (max-width: 667px) {
     .conversao-de-venda{
-        height: 110vh;
+        display: flex;
+        align-items: flex-start;
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-top: 5%;
+        height: 85vh;
     }
 }
