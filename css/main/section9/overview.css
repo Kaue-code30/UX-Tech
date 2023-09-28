@@ -1,8 +1,7 @@
 /* Estilos para a seção de visão geral */
 .overview {
     padding-top: 5%;
-    padding-bottom: 5%;
-    height: 110vh;
+    height: 100vh;
 }
 
 .overview-title-box {
@@ -30,7 +29,6 @@
 
 /* Estilos para a seção de seleção */
 .select-overview {
-    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,7 +64,6 @@
     background-color: #0074ff;
     color: #fff;
     font-weight: bold;
-    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
@@ -79,13 +76,14 @@
     align-items: center;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 100px;
     cursor: pointer;
     transition: transform 0.3s;
 }
 
 .active{
     display: flex;
+    
 }
 
 /* Efeito de escala suave ao passar o mouse */
@@ -95,14 +93,14 @@
 
 .box-image-overview {
     display: flex;
-    height: 100%;
+    height: 50%;
     justify-content: center;
     align-items: center;
 }
 
 /* Adicione margem interna às imagens */
 .box-image-overview img {
-    margin: 20px;
+    margin-top: 40px;
 }
 
 @media (max-width: 768px) {
@@ -164,14 +162,14 @@
 
 @media (max-width: 500px) {
     .overview{
-        height: 150vh;
+        height: 180vh;
         padding-top: 40%;
     }
 }
 
 @media (max-width: 360px) {
     .overview{
-        height: 130vh;
+        height: 150vh;
     }
     ul{
         padding-top: 10% !important;
@@ -180,7 +178,14 @@
 
 @media (max-width: 600px) {
     .overview{
-        height: 150vh;
-        padding-top: 40%;
+        height: 135vh;
+        padding-top: 30%;
+    }
+    .select-overview{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .box-image-overview{
+        height: 20%;
     }
 }

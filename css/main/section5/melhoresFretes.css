@@ -8,7 +8,7 @@
 .frete-box {
     display: grid;
     grid-template-areas: "text image"; 
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 48% 52%;
     width: 100%;
     height: auto; /* Alterado para altura automática */
 }
@@ -18,7 +18,7 @@
     flex-direction: column;
     gap: 2%;
     grid-area: text;
-    padding-left: 20%;
+    padding-left: 10%;
     padding-top: 20%;
 }
 
@@ -56,7 +56,7 @@
 .button-frete {
     margin-top: 2%;
     border-radius: 100px;
-    padding: 2.5%;
+    padding: 2%;
     color: #FFF;
     border: none;
     background-color: #0074ff;
@@ -95,8 +95,12 @@
 
 @media (max-width: 768px) {
     .melhores-opcoes-frete {
-        padding-bottom: 20%;
+        padding-bottom: 05%;
         height: auto; /* Alterado para altura automática */
+    }
+
+    .image-box-frete{
+        padding-top: 0%;
     }
 
     .frete-box {
@@ -105,7 +109,7 @@
         width: 100%;
         height: auto; /* Alterado para altura automática */
         padding-top: 20%;
-        padding-bottom: 20%;
+        padding-bottom: 02%;
     }
 
     .image-container-frete-mobile {
@@ -127,7 +131,9 @@
         width: 100%;
         font-weight: 700;
     }
-
+    .image-box-frete{
+        padding-top: 0%;
+    }
     .image-frete {
         width: 100%;
     }
@@ -151,8 +157,8 @@
     }
 
     .button-frete {
-        margin-top: 2%;
-        width: 100%;
+        padding: 10px;
+        width: 80%;
     }
 
     .image-container-frete {
@@ -165,14 +171,20 @@
         height: auto; /* Alterado para altura automática */
     }
 
+    .image-box-frete{
+        padding-top: 0%;
+    }
+
     .frete-box {
         padding-top: 10%;
-        padding-bottom: 10%;
     }
 }
 
 @media (max-width: 360px) {
     .melhores-opcoes-frete {
         height: auto; /* Alterado para altura automática */
+    }
+    .image-box-frete{
+        padding-top: 0%;
     }
 }

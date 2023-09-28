@@ -93,7 +93,7 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 70px;
         left: 0;
         width: 100%;
         background-color: #000;
@@ -102,18 +102,17 @@
         padding-left: 6%;
     }
 
-    .menu-list.active {
-        display: flex;
-        padding-left: 8%;
-    }
-
     .localizaz-tech{
         display: flex;
+        margin-left: 10%;
     }
     
 
     .menu-list li {
         margin: 0;
+        margin-left: 10%;
+        font-size: 1rem;
     }
+
     
 }

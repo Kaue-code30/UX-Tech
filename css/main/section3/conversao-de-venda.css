@@ -2,7 +2,9 @@
 .conversao-de-venda {
     display: flex;
     align-items: center;
-    padding: 10% 10% 10% 10%;
+    padding-left: 5%;
+    padding-top: 7%;
+    padding-bottom: 10%;
     min-height: 70vh;
 }
 
@@ -10,13 +12,18 @@
     display: grid;
     width: 100%;
     grid-template-areas: "image text";
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 35% 65%;
 }
 
 .gif-phone {
     grid-area: image;
-    width: 80%;
-    max-width: 70%;
+    width: 70%;
+}
+
+.gif-conversao-box{
+    display: flex;
+    align-items: flex-end;
+    
 }
 
 .text-conversao {
@@ -48,7 +55,7 @@
 }
 
 .icon-conversao {
-    width: 13%;
+    width: 11%;
 }
 
 .button-conversao {
@@ -58,20 +65,26 @@
     border-radius: 100px;
     border: none;
     background-color: #0074FF;
-    height: 8%;
-    width: 18%;
+    height: 7%;
+    width: 20%;
 }
 
 /* Estilos para telas menores (768px ou menos) */
 @media screen and (max-width: 768px) {
     .conversao-de-venda {
-        padding: 7% 7% 7% 7%;
+        padding: 10% 7% 7% 7%;
     }
 
     .conversao-box {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .text-conversao{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .title-conversao {
@@ -99,7 +112,8 @@
     }
 
     .button-conversao {
-        width: 90%;
+        width: 45%;
+        padding: 8px;
     }
 
     .gif-phone {
@@ -110,7 +124,7 @@
 /* Estilos para telas muito pequenas (400px ou menos) */
 @media screen and (max-width: 400px) {
     .conversao-de-venda {
-        padding: 10% 7% 20% 7%;
+        padding: 7% 7% 20% 7%;
     }
 
     .conversao-box {

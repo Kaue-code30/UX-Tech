@@ -1,26 +1,69 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const sliderContainer = document.querySelector('.slider-container');
-    const prevSlideBtn = document.querySelector('.slide-prev');
-    const nextSlideBtn = document.querySelector('.slide-next');
-    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const prevButtons = document.querySelectorAll('.quadrado-prev');
+    let currentSlide = 0;
 
-    prevSlideBtn.addEventListener('click', () => {
-        showSlide(slideIndex - 1);
-    });
-
-    nextSlideBtn.addEventListener('click', () => {
-        showSlide(slideIndex + 1);
-    });
-
+    // Função para mostrar um slide com base no índice
     function showSlide(index) {
-        const slides = document.querySelectorAll('.slide');
-        if (index >= slides.length) {
-            slideIndex = 0;
-        } else if (index < 0) {
-            slideIndex = slides.length - 1;
-        } else {
-            slideIndex = index;
-        }
-        sliderContainer.style.transform = `translateX(-${slideIndex * 100}%)`;
+        slides.forEach(slide => slide.classList.remove('active'));
+        prevButtons.forEach(button => button.classList.remove('active-'));
+        
+        currentSlide = index;
+
+        slides[currentSlide].classList.add('active');
+        prevButtons[currentSlide].classList.add('active-');
     }
+
+    // Adicione eventos de clique aos botões quadrados
+    prevButtons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            showSlide(index);
+        });
+    });
+
+    // Função para avançar para o próximo slide
+    function nextSlide() {
+        const nextIndex = (currentSlide + 1) % slides.length;
+        showSlide(nextIndex);
+    }
+
+    // Função para retroceder para o slide anterior
+    function prevSlide() {
+        const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(prevIndex);
+    }
+
+    // Adicione eventos de clique aos botões de próximo e anterior
+    const nextSlideBtn = document.querySelector('.slide-next');
+    const prevSlideBtn = document.querySelector('.slide-prev');
+
+    if (nextSlideBtn) {
+        nextSlideBtn.addEventListener('click', nextSlide);
+    }
+
+    if (prevSlideBtn) {
+        prevSlideBtn.addEventListener('click', prevSlide);
+    }
+
+    // Função para avançar automaticamente a cada 5 segundos
+    function autoNextSlide() {
+        nextSlide();
+    }
+
+    // Configure o intervalo para avançar automaticamente a cada 5 segundos
+    const interval = setInterval(autoNextSlide, 9000);
+
+    // Pare o intervalo quando o mouse estiver sobre o slider
+    const slider = document.querySelector('.slider');
+    slider.addEventListener('mouseenter', () => {
+        clearInterval(interval);
+    });
+
+    // Retome o intervalo quando o mouse sair do slider
+    slider.addEventListener('mouseleave', () => {
+        interval = setInterval(autoNextSlide, 9000);
+    });
+
+    // Inicialmente, mostre o primeiro slide
+    showSlide(currentSlide);
 });

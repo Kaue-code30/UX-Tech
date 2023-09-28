@@ -1,4 +1,4 @@
-header{
+header {
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -7,8 +7,7 @@ header{
     justify-content: space-between;
     height: 9%;
     background-color: #000;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
 .box-header{
@@ -16,6 +15,7 @@ header{
     align-items: center;
     gap: 10px;
     width: 100%;
+    padding-left: 5%;
 }
 
 .logo-header{
@@ -47,31 +47,115 @@ header{
 .button-header-menu{
     display: none;
 }
+.ecommerce-box {
+    position: absolute;
+    top: 100%;
+    z-index: 100;
+    display: grid;
+    grid-template-areas: "white-box black-box";
+    grid-template-columns: 34% 66%;
+    width: 100%;
+    display: none; /* Inicialmente oculto */
+}
+
+.white-box{
+    display: flex;
+    flex-direction: column;
+    padding: 12%;
+    gap: 10px;
+    justify-content: center;
+    grid-area: white-box;
+    background-color: #FFF;
+}
+.white-box > h3{
+    font-size: 0.85rem;
+}
+.white-box > p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 100%;
+    width: 100%;
+}
+.black-box{
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    grid-area: black-box;
+    background-color: #000;
+    padding-left: 5%;
+    padding-right: 8%;
+}
+.vertical-item{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+.vertical-item > p{
+    width: 80%;
+    font-size: 0.8rem;
+}
+.vertical-item > a{
+    font-weight: 500;
+}
+
+.ecommerce-box-mobile{
+    display: none;
+}
 
 
+.submenu-mobile{
+    display: none;
+}
 
 @media screen and (max-width: 768px) {
-    .logo-header{
-        width: 10   0%;
-    }
-    .image-box{
-        width: 20%;
-    }
-    .fas{
-        font-size: 1.9rem !important;
-    }
-    header{
-        height: 10%;
-    }
-    .box-header{
-        display: flex;
-        justify-content: space-between;
+    /* Estilos responsivos para telas com largura máxima de 768px */
+    .ecommerce-box{
+        display: none !important;
     }
 
-    .button-header{
+    .submenu-mobile{
+        display: flex;
+        padding-bottom: 10px;
+    }
+
+    .submenu-desk{
         display: none;
     }
-    .button-header-menu{
+
+    .ecommerce-box-mobile{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .logo-header {
+        width: 145%;
+    }
+
+    .image-box {
+        width: 20%;
+    }
+
+    .fas {
+        font-size: 1.9rem !important;
+    }
+
+    header {
+        height: 10%;
+    }
+
+    .box-header {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10%; /* Ajuste o preenchimento para telas menores */
+        padding-right: 5%; /* Ajuste o preenchimento para telas menores */
+    }
+
+
+    .button-header {
+        display: none;
+    }
+
+    .button-header-menu {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -80,15 +164,65 @@ header{
         border: none;
         border: 1px solid #000000;
         background-color: #FFF;
-        height: 30px;
         font-weight: 400;
         width: 80%;
         font-size: 0.8rem;
-        padding: 20px;
+        padding: 3%;
+        margin-left: 10%;
     }
     .button-header-menu:hover{
         background-color: #000;
         color: #FFF;
         border: 1px solid #FFF;
     }
+    .localizaz-tech{
+       padding-top: 5%;
+       padding-bottom: 3%;
+    }
+
+    .submenu{
+        padding-bottom: 10px;
+    }
+    .white-box{
+        width: 150%;
+        padding: 0;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        padding-left: 10%;
+    }
+    .white-box > h4 {
+        font-size: 1.1rem;
+    }
+    .white-box > p{
+        width: 60%;
+        font-size: 1rem;
+    }
+    .menu-list.active {
+        padding-left: 0%;
+    }
+    .black-box {
+        display: flex;
+        overflow-x: auto; /* Habilita a barra de rolagem horizontal se necessário */
+        max-width: 100; /* Aumente a largura máxima */
+        height: 20vh;
+    }
+    .box-mobile-config{
+        display: flex;
+        padding-left: 6%;
+    }
+    .vertical-item {
+        display: flex;
+        width: 250px;
+        gap: 5px;
+    }
+    .vertical-item > p {
+        line-height: 20px;
+        width: 65%;
+    }
+    .vertical-item > span {
+        line-height: 100%;
+        font-size: 1.3rem;
+    }
+    
+    
 }

@@ -44,18 +44,17 @@
 
 .slide-venda {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     align-items: center;
     justify-content: center !important;
     text-align: center;
     padding: 20px;
     width: 90%;
-    height: auto; /* Alterado para altura automática */
+    height: 400px; /* Defina a altura desejada aqui */
     background-color: #fff;
     -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
-    height: 400px;
 }
 
 .image-slide-venda {
@@ -63,12 +62,13 @@
 }
 
 .content-slide-venda {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10%;
-    padding-top: 10%;
+    gap: 20px;
+    padding-top: 5%;
 }
 
 .description-slide-venda {
@@ -87,6 +87,7 @@
     padding: 1%;
     border-radius: 100px;
     width: 45%;
+    transition: 0.2s;
 }
 
 .button-slide-venda:hover {
@@ -140,8 +141,20 @@
 @media (max-width: 768px) {
     .gerencie-suas-entregas {
         height: auto; /* Alterado para altura automática */
-        padding-top: 20%;
+        padding-top: 15%;
         padding-bottom: 20%;
+        padding-left: 07%;
+        padding-right: 07%;
+    }
+
+    .arrow-venda{
+        font-size: 1.4rem;
+        font-weight: 700;
+        width: 10%;
+    }
+
+    .carousel-nav{
+        left: 15%;
     }
 
     .gerencie-box {
@@ -160,9 +173,13 @@
     }
 
     .slide-venda {
+        position: relative;
         width: 100%;
-        height: auto; /* Alterado para altura automática */
+        height: 300px;
         padding: 0;
+        position: relative ;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
 
     .carousel-nav {
@@ -178,8 +195,8 @@
 
     .button-slide-venda {
         font-size: 0.8rem;
-        padding: 2%;
-        width: 70%;
+        padding: 3%;
+        width: 60%;
     }
 
     .image-slide-venda {
@@ -188,6 +205,7 @@
     .content-slide-venda{
         padding-top: 0;
         padding-bottom: 10%;
+        gap: 15px;
     }
 }
 

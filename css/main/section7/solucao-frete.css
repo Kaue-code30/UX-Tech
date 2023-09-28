@@ -3,8 +3,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: auto; /* Altura automática para ajustar ao conteúdo */
-    padding: 7% 10%; /* Simplificado o padding */
+    height: auto;
+    padding-left: 05%;
+    padding-right: 05%;
+    padding-top: 5%;
+    padding-bottom: 7%;
     background-color: #dedede;
 }
 
@@ -15,11 +18,12 @@
 }
 
 .title-box-one {
-    font-size: 2rem;
+    font-size: 2.1rem;
+    width: 45%;
 }
 
 .image-box-one {
-    width: 60%;
+    width: 55%;
     text-align: center; /* Alinhamento de texto */
 }
 
@@ -63,9 +67,16 @@
     border: none;
     border-radius: 100px;
     width: 25%;
-    padding: 1%;
-    margin-left: 2%;
+    padding: 0.8%;
     text-align: center; /* Alinhamento de texto */
+}
+.button-solucoes:hover{
+    background-color: #000;
+    transition: 0.5s;
+    color: #FFF;
+}
+.button-solucoes-:hover{
+    color: #FFF;
 }
 
 .button-solucoes > a {
@@ -75,10 +86,21 @@
 
 @media (max-width: 768px) {
     .solucao-para-gestao-de-frete {
-        padding: 7%;
+        padding-top: 15%;
+        padding-bottom: 20%;
         height: auto; /* Altura automática */
     }
+    .solucao-para-gestao-de-frete-box-one{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+    .image-box-one{
+        width: 100%;
+    }
     .title-box-one {
+        width: 95%;
         font-size: 25px;
     }
     .title-box-two {
@@ -86,16 +108,24 @@
     }
     .button-solucoes {
         margin-top: 10px;
-        padding: 5%;
-        width: 80%;
+        padding:4%;
+        width: 100%;
+        
+    }
+
+    button{
+        padding: 10%;
     }
     .box-two-itens-two{
         display: flex;
         flex-direction: column;
+        gap: 30px;
+        
     }
     .box-two-itens-one{
         display: flex;
         flex-direction: column;
+        gap: 30px;
     }
 }
 

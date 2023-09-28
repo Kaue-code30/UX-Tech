@@ -24,26 +24,81 @@
     <link media="screen" rel="stylesheet" href="./css/main/section9/overview.css">
     <link media="screen" rel="stylesheet" href="./css/main/section10/depoimentos.css">
     <link media="screen" rel="stylesheet" href="./css/footer/footer.css">
-    <script async defer src="./JS/menuHeader/index.js"></script>
-    <script async defer src="./JS/Main/slider-home/index.js"></script>
-    <script async defer src="./JS/Main/conversao-de-vendas/index.js"></script>
-    <script async defer src="./JS/Main/sliderConversao/index.js"></script>
-    <script async defer src="./JS/overview/index.js"></script>
-    <script async defer src="https://kit.fontawesome.com/324b71f187.js" crossorigin="anonymous"></script>
+    <script defer src="./JS/menuHeader/index.js"></script>
+    <script defer src="./JS/Main/slider-home/index.js"></script>
+    <script defer src="./JS/Main/conversao-de-vendas/index.js"></script>
+    <script defer src="./JS/Main/sliderConversao/index.js"></script>
+    <script defer src="./JS/overview/index.js"></script>
+    <script defer src="./JS/header/headerApp.js"></script>
+    <script defer src="https://kit.fontawesome.com/324b71f187.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <Header>
+        <div class="ecommerce-box">
+                <div class="white-box">
+                    <H3>PARA E-COMMERCE & MARKETPLACE</H3>
+                    <p>
+                        Soluções que atendem desde o desenvolvimento
+                        do site, gestão de estoque, gestão de fretes,
+                        gestão de transportes até a entrega para o 
+                        cliente, garantindo a melhor experiência em
+                        todas as etapas.
+                    </p>
+                </div>  
+                <div class="black-box">
+                    <div class="vertical-item">
+                        <h4>
+                            UX <span style="color: #ffd400;">FULFILLMENT</span>
+                        </h4>
+                        <p>
+                            EXCELÊNCIA NA GESTÃO DE OPERAÇÕES.
+                        </p>
+                        <a href="">Acessar ></a>
+                    </div>
+                    <div class="vertical-item">
+                        <h4>
+                            UX <span style="color: #0074ff;">SOLUTIONS</span>
+                        </h4>
+                        <p>
+                            TECNOLOGIA PARA GESTÃO LOGÍSTICA.
+                        </p>
+                        <a href="">Acessar ></a>
+                    </div>
+                    <div class="vertical-item">
+                        <h4>
+                            UX <span style="color: #6a49bd;">CONNECT</span>
+                        </h4>
+                        <p>
+                            EXPERIÊNCIA INTEGRADA NA GESTÃO DO CLIENTE.
+                        </p>
+                        <a href="">Acessar ></a>
+                    </div>
+                    <div class="vertical-item">
+                        <h4>
+                            UX <span style="color: #ff1600;">DELIVERY</span>
+                        </h4>
+                        <p>
+                            INOVAÇÃO NA GESTÃO DE TRANSPORTES.
+                        </p>
+                        <a href="">Acessar ></a>
+                    </div>
+                </div>
+        </div>
         <div class="box-header">
             <a class="image-box" href="https://uxgroup.com.br">
                  <img aria-label="Veja mais em UX Group" alt="logo-ux-group-branco" class="logo-header" src="https://uxgroup.com.br/_next/static/media/ux-branco.40be281c.svg" alt="">
             </a>
-
             <nav class="main-menu">
                 <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
                 <ul class="menu-list">
-                    <li><a href="#">E-COMMERCE</a></li>
+                    <li class="submenu-desk">
+                        <a href="#" id="ecommerce-link">E-COMMERCE </a>
+                    </li>
+                    <li class="submenu-mobile">
+                        <a href="#" id="ecommerce-link-mobile">E-COMMERCE </a>
+                    </li>
                     <li class="submenu">
                         <a href="#">TECNOLOGIA</a>
                     </li>
@@ -51,73 +106,125 @@
                         <a href="#">PROGRAMA ESG</a>
                     </li>
                     <li class="submenu">
-                        <a href="#">CONTATO</a>
+                        <a href="#form">CONTATO</a>
                     </li>
                     <li class="submenu">
                         <a href="#">BLOG</a>
                     </li>
-                    <p class="localizaz-tech" style="color: #fff; font-weight: 700; padding-top: 20%; padding-bottom: 20px; padding-left: 10px;">Localizar meu pedido:</p> 
-                    <Button style="margin-left: 10px;" class="button-header-menu">
+                    <div class="ecommerce-box-mobile">
+                        <div class="white-box">
+                            <H3>PARA E-COMMERCE & MARKETPLACE</H3>
+                            <p>
+                                Soluções que atendem desde o desenvolvimento
+                                do site, gestão de estoque, gestão de fretes,
+                                gestão de transportes até a entrega para o 
+                                cliente, garantindo a melhor experiência em
+                                todas as etapas.
+                            </p>
+                        </div>  
+                        <div class="black-box">
+                            <div class="box-mobile-config">
+                                <div class="vertical-item">
+                                    <h4>
+                                        UX <span style="color: #ffd400;">FULFILLMENT</span>
+                                    </h4>
+                                    <p>
+                                        EXCELÊNCIA NA GESTÃO DE OPERAÇÕES.
+                                    </p>
+                                    <a href="">Acessar ></a>
+                                </div>
+                                <div class="vertical-item">
+                                    <h4>
+                                        UX <span style="color: #0074ff;">SOLUTIONS</span>
+                                    </h4>
+                                    <p>
+                                        TECNOLOGIA PARA GESTÃO LOGÍSTICA.
+                                    </p>
+                                    <a href="">Acessar ></a>
+                                </div>
+                                <div class="vertical-item">
+                                    <h4>
+                                        UX <span style="color: #6a49bd;">CONNECT</span>
+                                    </h4>
+                                    <p>
+                                        EXPERIÊNCIA INTEGRADA NA GESTÃO DO CLIENTE.
+                                    </p>
+                                    <a href="">Acessar ></a>
+                                </div>
+                                <div class="vertical-item">
+                                    <h4>
+                                        UX <span style="color: #ff1600;">DELIVERY</span>
+                                    </h4>
+                                    <p>
+                                        INOVAÇÃO NA GESTÃO DE TRANSPORTES.
+                                    </p>
+                                    <a href="">Acessar ></a>
+                                </div>
+                            </div>
+                            </div>
+                </div>
+                    <p class="localizaz-tech" style="color: #fff; font-weight: 700;">Localizar meu pedido:</p> 
+                    <Button class="button-header-menu">
                         ondetah minha entrega
                     </Button>
                 </ul>
             </nav>
-           
         </div>
-       
         <Button class="button-header">
             ondetah minha entrega
         </Button>
     </Header>
-
     <Main>
 
-        <Section class="slider" id="home">
+        <section class="slider" id="home">
             <div class="slider-nav-prev">
-                <button class="slide-prev">&#10094;</button>
+                <div id="prev1" class="quadrado-prev active-prev button-prev"></div>
+                <div id="prev2" class="quadrado-prev active- button-prev"></div>
+                <div id="prev3" class="quadrado-prev active- button-prev"></div>
+                <div id="prev4" class="quadrado-prev active- button-prev"></div>
             </div>
-            
-            
+        
             <div class="slider-container">
-                <div id="slide-1" class="slide">
+                <div id="slide-1" class="slide active">
                     <div class="slide-content">
                         <h1 class="title-slide">Reduza 45% dos seus custos com frete</h1>
-                        <p class="sub-slide">Ultilize o <span style="font-weight: 700;"> TMS Embarcador</span> mais completo do mercado.</p>
-                        <Button class="button-slide">saiba mais</Button>
+                        <p class="sub-slide">Utilize o <span style="font-weight: 700;">TMS Embarcador</span> mais completo do mercado.</p>
+                        <button class="button-slide">
+                            <a href="#form">saiba mais</a>
+                        </button>
                     </div>
                 </div>
-                <div id="slide-2"  class="slide">
+                <div id="slide-2" class="slide">
                     <div class="slide-content">
-                        <h1 class="title-slide">Tenha controle total do faturamento por motorista e enttrega</h1>
-                        <p class="sub-slide">A gestão completa das <span style="font-weight: 700;"> suas entregas em um único lugar. </span> </p>
-                        <Button class="button-slide">saiba mais</Button>
+                        <h1 class="title-slide">Tenha controle total do faturamento por motorista e entrega</h1>
+                        <p class="sub-slide">A gestão completa das <span style="font-weight: 700;">suas entregas em um único lugar.</span></p>
+                        <button class="button-slide">
+                            <a href="#form">saiba mais</a>
+                        </button>
                     </div>
                 </div>
-                <div id="slide-3"  class="slide">
+                <div id="slide-3" class="slide">
                     <div class="slide-content">
-                        <h1 class="title-slide">Tenha uma nova modalidade de negócio para o seu marktplace</h1>
-                        <p class="sub-slide">Atraia mais sellers oferecendo <span style="font-weight: 700;">fretes competitivos. </span></p>
-                        <Button class="button-slide">saiba mais</Button>
+                        <h1 class="title-slide">Tenha uma nova modalidade de negócio para o seu marketplace</h1>
+                        <p class="sub-slide">Atraia mais sellers oferecendo <span style="font-weight: 700;">fretes competitivos.</span></p>
+                        <button class="button-slide">
+                            <a href="#form">saiba mais</a>
+                        </button>
                     </div>
                 </div>
-                <div id="slide-4"  class="slide">
+                <div id="slide-4" class="slide">
                     <div class="slide-content">
                         <h1 class="title-slide">Melhore a experiência de compra do seu cliente</h1>
                         <p class="sub-slide">Ofereça acompanhamento em tempo real com <span style="font-weight: 700;">autoatendimento.</span></p>
-                        <Button class="button-slide">saiba mais</Button>
+                        <button class="button-slide">
+                            <a href="#form">saiba mais</a>
+                        </button>
                     </div>
                 </div>
-                <!-- Adicione mais slides conforme necessário -->
             </div>
-            <div class="slider-nav">
-                
-                <button class="slide-next">&#10095;</button>
-            </div>
-        </Section>
-
+        </section>
 
         <Section class="Tech-de-ponta-a-ponta">
-
             <div class="tech-box">
                 <div class="title-text-tech">
                     <h1 class="title-tech">
@@ -162,14 +269,11 @@
                 </div>
 
             </div>
-
         </Section>
                 
         <Section class="conversao-de-venda">
-
             <div class="conversao-box">
-
-                <div class="">
+                <div class="gif-conversao-box">
                     <video class="gif-phone" autoplay loop muted playsinline>
                         <source type="video/webm" alt="celular-preto-mostrando-notificacoes" id="animated-image" src="./images/Main/conversao-de-venda/conversao-vendas.webm"> 
                     </video>
@@ -214,13 +318,14 @@
                         </li>
                     </ul>
                     <button class="button-conversao">
-                        saiba mais
+                        <a href="#form">
+                            saiba mais
+                        </a>
                     </button>
                 </div>
-
             </div>
-
         </Section>
+
         <section class="gerencie-suas-entregas">
             <div class="gerencie-box">
                 <h1 class="title-gerencie">Gerencie suas entregas em um único lugar:</h1>
@@ -256,7 +361,7 @@
                                 <div class="content-slide-venda">
                                 <img alt="icone de uma folha" class="image-slide-venda" src="./images/Main/gerencie-suas-entregas/slider/conciliacao.svg" alt="Slide 4">
                                 <h3 class="description-slide-venda">Conciliação dos custos de frete.</h3>
-                                <button class="button-slide-venda"> fale com um especialista</button>
+                                <button class="button-slide-venda">fale com um especialista</button>
                                 </div>
                             </div>
                             <div class="slide-venda">
@@ -311,7 +416,7 @@
                         </div>
                     </div>
                     <button class="button-frete">
-                        fale com um especialista 
+                        <a target="_parent" href="#form">fale com um especialista </a>
                     </button>
                 </div>
                 <div class="image-container-frete">
@@ -370,7 +475,9 @@
                             </div>
                         </div>
                 </div>
-                <button class="button-seu-cliente">fale com um especialista</button>
+                <button class="button-seu-cliente">
+                    <a href="#form">fale com um especialista</a>
+                </button>
             </div>
 
         </section>
@@ -413,7 +520,7 @@
                     </div>
                 </div>
                 <button class="button-solucoes"> 
-                    <a target="_blank" href="https://calendly.com/natielen-campos/ux-group-voce?">agende com um especialista</a>
+                    <a class="button-solucoes-" target="_blank" href="https://calendly.com/natielen-campos/ux-group-voce?">agende com um especialista</a>
                 </button>
             </div>
         </section>
@@ -477,7 +584,6 @@
                 <h1>
                    Feedback dos nossos  <span class="text-destaque-title-depoimento">parceiros.</span><span style="color: #000;">|</span>
                 </h1>
-                <i class="fas fa-quote-left"></i>
                 <span class="depoimento-text">
                     Super parceria com a UX, muito bacana, 
                     que pra gente é muito importante pra Restoque,
@@ -488,7 +594,6 @@
                     de parabéns! Uma excelente parceria que estamos
                     tendo.
                 </span>
-
                 <div class="item-person-depoimento">
                     <img alt="logo da empresa veste" class="image-person-depoimento" src="./images/Main/depoimentos/logo-veste.png" alt="">
                     <h3 class="name-person-depoimentos">  	
@@ -499,10 +604,9 @@
         </section>
     </Main>
     <footer>
-
         <div id="contato" class="footer-box">
             <div class="logo-footer-box">
-                <img alt="logo da empresa UX solutions" class="logo-footer" src="./images/footer/logo-uxs.png" alt="">
+                <img alt="logo da empresa UX solutions" class="logo-footer" src="https://uxgroup.com.br/_next/static/media/ux-branco.40be281c.svg" alt="">
             </div>
             <div class="infos-box">
                 <div class="infos-itens-one">
@@ -530,7 +634,7 @@
                 <h3>
                     Contato
                 </h3>
-                <div class="form">
+                <div id="form" class="form">
                     <form class="form" action="http://localhost:8080/enviar-email" method="post">
                         <input type="text" name="nome" placeholder="Nome*" required>
                         <input type="email" name="email" placeholder="Email*" required>
@@ -558,8 +662,7 @@
                     </form>
                 </div>
             </div>
-        </div>
-
+        </div
     </footer>
 </body>
 </html>

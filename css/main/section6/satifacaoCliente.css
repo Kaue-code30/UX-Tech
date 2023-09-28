@@ -2,7 +2,7 @@
     height: auto; /* Alterado para altura automática */
     background-color: #FFF;
     padding: 3% 0; /* Alterado o padding-top e removido o padding-bottom */
-    padding-bottom: 5%;
+    padding-bottom: 7%;
 }
 
 .seu-cliente-box {
@@ -28,8 +28,8 @@
     display: grid;
     grid-template-areas: "text-one image text-two";
     grid-template-columns: 20% 60% 20%;
-    padding-left: 10%;
-    padding-right: 9%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .seu-cliente-list-one {
@@ -74,7 +74,7 @@
 }
 
 .seu-cliente-gif {
-    width: 80%;
+    width: 75%;
 }
 
 .button-seu-cliente {
@@ -84,9 +84,15 @@
     font-size: 1rem;
     border: 1px solid #0074ff;
     border-radius: 100px;
-    padding: 1%;
+    padding: 0.7%;
     width: 20%;
     margin-top: 1%;
+}
+
+.button-seu-cliente:hover{
+    background-color: #000;
+    transition: 0.5s;
+    border: 1px solid #000;
 }
 
 .seu-cliente-gif-box-mobile {
@@ -97,7 +103,9 @@
     .garanta-a-satisfação-do-seu-cliente {
         height: auto; /* Alterado para altura automática */
         background-color: #FFF;
-        padding: 7%;
+        padding-left: 07%;
+        padding-right: 07%;
+        padding-bottom: 20%;
     }
 
     .seu-cliente-box {
@@ -166,7 +174,7 @@
 
     .button-seu-cliente {
         width: 100%;
-        padding: 3%;
+        padding: 2%;
     }
 }
 
