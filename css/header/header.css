@@ -38,11 +38,20 @@ header {
     font-size: 0.8rem;
     
 }
+
+.button-header-link{
+    color: #000;
+}
+    
+
     
 .button-header:hover{
     background-color: #000;
     color: #FFF;
     border: 1px solid #FFF;
+}
+.button-header:hover > a{
+    color: #FFF;
 }
 .button-header-menu{
     display: none;
@@ -169,6 +178,9 @@ header {
         font-size: 0.8rem;
         padding: 3%;
         margin-left: 10%;
+    }
+    .button-link-menu{
+        color: #000;
     }
     .button-header-menu:hover{
         background-color: #000;
