@@ -51,17 +51,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Configure o intervalo para avançar automaticamente a cada 5 segundos
-    const interval = setInterval(autoNextSlide, 9000);
+    const interval = setInterval(autoNextSlide, 15000);
 
     // Pare o intervalo quando o mouse estiver sobre o slider
     const slider = document.querySelector('.slider');
-    slider.addEventListener('mouseenter', () => {
+    slider.addEventListener('fullscreenchange', () => {
         clearInterval(interval);
     });
 
     // Retome o intervalo quando o mouse sair do slider
     slider.addEventListener('mouseleave', () => {
-        interval = setInterval(autoNextSlide, 9000);
+        interval = setInterval(autoNextSlide, 15000);
     });
 
     // Inicialmente, mostre o primeiro slide

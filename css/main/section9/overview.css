@@ -76,9 +76,9 @@
     align-items: center;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 100px;
     cursor: pointer;
     transition: transform 0.3s;
+    width: 175px;
 }
 
 .active{
@@ -200,6 +200,11 @@
 
 @media (max-width: 667px) {
     .overview{
-        height: 120vh;
+        padding-top: 5%;
+        padding-bottom: 20%;
+        height: auto;
+    }
+    .select-overview{
+        padding-top: 3%;
     }
 }
