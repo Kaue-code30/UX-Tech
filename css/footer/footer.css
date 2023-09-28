@@ -26,6 +26,7 @@ footer {
 
 .infos-box {
     display: flex;
+    justify-content: space-evenly;
     color: #fff;
     grid-area: info;
     font-weight: 400;
@@ -51,10 +52,10 @@ a {
     flex-direction: column;
     grid-area: form;
     color: #fff;
-    padding-left: 5%;
     text-align: left;
     gap: 10px;
     height: auto;
+    padding-left: 5%;
 }
 
 .form {
@@ -75,7 +76,7 @@ a {
 
 .form-message {
     flex: 1;
-    padding: 25px !important;
+    padding-bottom: 50px !important;
     width: 100%;
 }
 
@@ -96,7 +97,7 @@ a {
 .assunto-forms {
     border: 1px solid white;
     background-color: #00000000;
-    width: 100%;
+    width: 97%;
     color: #fff;
     padding: 2%;
     margin-bottom: 10px;
@@ -184,5 +185,11 @@ a {
         display: flex;
         flex-direction: column;
         height: auto;
+    }
+}
+
+@media (max-width: 667px) {
+    .form-message{
+        padding-bottom: 40px !important;
     }
 }

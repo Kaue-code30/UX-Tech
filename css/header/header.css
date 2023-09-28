@@ -75,6 +75,7 @@ header {
     justify-content: center;
     grid-area: white-box;
     background-color: #FFF;
+    padding-left: 14%;
 }
 .white-box > h3{
     font-size: 0.85rem;

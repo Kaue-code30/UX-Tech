@@ -110,6 +110,13 @@ button{
     .cta-reduza-seus-gastos{
         padding-top: 10%;
         padding-bottom: 10%;
-        height: 75vh;
+        height: 95vh;
+    }
+}
+@media (max-width: 667px) {
+    .cta-reduza-seus-gastos{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        height: 95vh;
     }
 }
