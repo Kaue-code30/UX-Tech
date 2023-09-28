@@ -200,11 +200,13 @@
             left: 40%;
         }
         .button-slide{
-            color: #000000;
-            background-color: #FFF;
-            padding: 2%;
+            display: flex;
+            justify-content: center;
+            
         }
-        .button-slide > a{
-            color: #000000;
+        .button-slide > button{
+            padding: 1%;
+            font-size: 0.9rem;
+            font-weight: 400;
         }
     }
