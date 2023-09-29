@@ -95,7 +95,10 @@
 
 @media (max-width: 768px) {
     .melhores-opcoes-frete {
-        padding-bottom: 05%;
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 10%;
         height: auto; /* Alterado para altura automática */
     }
 
@@ -121,7 +124,7 @@
         flex-direction: column;
         gap: 1em;
         grid-area: text;
-        padding: 7%;    
+        padding: 0%;    
         height: auto; /* Alterado para altura automática */
     }
 

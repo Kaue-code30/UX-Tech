@@ -143,8 +143,8 @@
         height: auto; /* Alterado para altura automática */
         padding-top: 15%;
         padding-bottom: 20%;
-        padding-left: 07%;
-        padding-right: 07%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     .arrow-venda{
@@ -183,8 +183,8 @@
     }
 
     .carousel-nav {
-        left: 0%;
-        width: 100%;
+        left: 02.5%;
+        width: 95%;
     }
 
     .description-slide-venda {

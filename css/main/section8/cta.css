@@ -81,11 +81,11 @@ button{
     .cta-reduza-seus-gastos{
         height: 55vh;
         background-image: url('../../../images/cta/mobile.svg');
-        padding-left: 7%;
-        padding-right: 7%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     .title-cta{
-        font-size: 30px;
+        font-size: 28px;
         text-align: left;
     }
     .description-cta{

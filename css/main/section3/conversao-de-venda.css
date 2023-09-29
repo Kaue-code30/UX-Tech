@@ -72,7 +72,8 @@
 /* Estilos para telas menores (768px ou menos) */
 @media screen and (max-width: 768px) {
     .conversao-de-venda {
-        padding: 10% 7% 7% 7%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     .conversao-box {
@@ -142,8 +143,8 @@
     .conversao-de-venda{
         display: flex;
         align-items: flex-start;
-        padding-left: 7%;
-        padding-right: 7%;
+        padding-left: 10%;
+        padding-right: 10%;
         padding-top: 5%;
         padding-bottom: 20%;
         height: auto;

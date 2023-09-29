@@ -103,8 +103,8 @@
     .garanta-a-satisfação-do-seu-cliente {
         height: auto; /* Alterado para altura automática */
         background-color: #FFF;
-        padding-left: 07%;
-        padding-right: 07%;
+        padding-left: 10%;
+        padding-right: 10%;
         padding-bottom: 20%;
     }
 
@@ -173,7 +173,7 @@
     }
 
     .button-seu-cliente {
-        width: 90%;
+        width: 100%;
         padding: 3%;
     }
 }

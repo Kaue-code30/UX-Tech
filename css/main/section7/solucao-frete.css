@@ -88,6 +88,8 @@
 @media (max-width: 768px) {
     .solucao-para-gestao-de-frete {
         padding-top: 15%;
+        padding-left: 10%;
+        padding-right: 10%;
         padding-bottom: 20%;
         height: auto; /* Altura automática */
     }
