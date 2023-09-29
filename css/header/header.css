@@ -163,7 +163,7 @@ header {
     .box-header {
         display: flex;
         justify-content: space-between;
-        padding-left: 10%; /* Ajuste o preenchimento para telas menores */
+        padding-left: 7%; /* Ajuste o preenchimento para telas menores */
         padding-right: 5%; /* Ajuste o preenchimento para telas menores */
     }
 
@@ -185,7 +185,7 @@ header {
         width: 80%;
         font-size: 0.8rem;
         padding: 3%;
-        margin-left: 10%;
+        margin-left: 7%;
     }
     .button-link-menu{
         color: #000;
@@ -249,6 +249,6 @@ header {
 
 @media (max-width: 667px) {
     .logo-header{
-        width: 130%;
+        width: 120%;
     }
 }
