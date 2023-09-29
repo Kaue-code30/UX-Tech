@@ -23,8 +23,8 @@
 }
 
 .title-fretes {
-    font-size: 40px;
-    line-height: 1.2em;
+    font-size: 2.25rem;
+    line-height: 50px;
     width: 80%;
     font-weight: 700;
 }
@@ -129,8 +129,8 @@
     }
 
     .title-fretes {
-        font-size: 30px;
-        line-height: 1.2em;
+        font-size: 1.9rem;
+        line-height: 40px;
         width: 100%;
         font-weight: 700;
     }

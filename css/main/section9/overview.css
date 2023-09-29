@@ -14,7 +14,8 @@
 }
 
 .title-overview {
-    font-size: 2.7rem;
+    font-size: 2.25rem;
+    line-height: 50px;
 }
 
 .sub-overview {
@@ -118,7 +119,8 @@
         padding-top: 10%;
     }
     .title-overview{
-        line-height: 110%;
+        font-size: 1.9rem;
+        line-height: 40px;
     }
     .sub-overview{
         font-size: 0.9rem;
@@ -197,6 +199,10 @@
     }
     .box-image-overview{
         height: 20%;
+    }
+    .title-overview{
+        font-size: 1.9rem;
+        line-height: 40px;
     }
 }
 

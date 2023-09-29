@@ -85,7 +85,8 @@ button{
         padding-right: 10%;
     }
     .title-cta{
-        font-size: 28px;
+        font-size: 1.9rem;
+        line-height: 40px;
         text-align: left;
     }
     .description-cta{

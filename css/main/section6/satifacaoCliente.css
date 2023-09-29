@@ -21,7 +21,8 @@
 }
 
 .title-seu-cliente {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    line-height: 50px;
 }
 
 .content-seu-cliente {
@@ -117,7 +118,8 @@
     }
 
     .title-seu-cliente {
-        font-size: 2rem;
+        font-size: 1.9rem;
+        line-height: 40px;
     }
 
     .seu-cliente-gif-box-mobile {

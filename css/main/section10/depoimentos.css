@@ -15,7 +15,8 @@
 
 .box-depoimentos > h1 {
     color: #FFF;
-    font-size: 3rem;
+    font-size: 2.25rem;
+    line-height: 50px;
     text-align: center; /* Alinhamento de texto */
 }
 
@@ -78,6 +79,12 @@
     .image-person-depoimento {
         width: 20%;
     }
+
+    .box-depoimentos > h1{
+        font-size: 1.9rem;
+        line-height: 40px;
+    }
+
 }
 
 @media (max-width: 400px) {

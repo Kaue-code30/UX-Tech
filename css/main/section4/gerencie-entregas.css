@@ -12,7 +12,8 @@
 }
 
 .title-gerencie {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    line-height: 50px;
 }
 
 .sub-gerencie {
@@ -170,6 +171,7 @@
 
     .title-gerencie {
         font-size: 1.9rem;
+        line-height: 40px;
     }
 
     .slide-venda {
