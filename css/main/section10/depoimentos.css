@@ -83,6 +83,7 @@
     .box-depoimentos > h1{
         font-size: 1.9rem;
         line-height: 40px;
+        width: 100%;
     }
 
 }

@@ -121,6 +121,7 @@
     .title-overview{
         font-size: 1.9rem;
         line-height: 40px;
+        width: 100%;
     }
     .sub-overview{
         font-size: 0.9rem;
