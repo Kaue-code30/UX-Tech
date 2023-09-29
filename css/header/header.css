@@ -163,8 +163,8 @@ header {
     .box-header {
         display: flex;
         justify-content: space-between;
-        padding-left: 8%; /* Ajuste o preenchimento para telas menores */
-        padding-right: 8%; /* Ajuste o preenchimento para telas menores */
+        padding-left: 10%; /* Ajuste o preenchimento para telas menores */
+        padding-right: 10%; /* Ajuste o preenchimento para telas menores */
     }
 
 
