@@ -41,6 +41,12 @@
     width: 90%;
 }
 
+.tech-gif{
+    padding-top: 10%;
+    width: 100%;
+    margin-bottom: -5px;
+}
+
 .tech-universo-gif {
     height: auto; /* Alterado para altura automática */
     width: 100%;
@@ -102,6 +108,12 @@
     .image-gif {
         display: flex;
         padding: 0;
+        width: 100%;
+    }
+
+    .tech-gif{
+        padding-top: 10%;
+        width: 100%;
     }
 
     .tech-universo-gif {

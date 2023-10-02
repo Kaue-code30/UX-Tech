@@ -123,6 +123,10 @@
         width: 100%;
     }
 
+    .cliente-gif{
+        width: 100%;
+    }
+
     .seu-cliente-gif-box-mobile {
         display: flex;
         justify-content: center;
