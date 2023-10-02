@@ -32,7 +32,7 @@
     <script defer src="./JS/overview/index.js"></script>
     <script defer src="./JS/header/headerApp.js"></script>
     <script defer src="https://kit.fontawesome.com/324b71f187.js" crossorigin="anonymous"></script>
-    {/*<!-- Google Tag Manager -->*/}
+    <!-- Google Tag Manager -->
     <Script id='googleManager'>
         {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -40,20 +40,22 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-5M78MWM');`}
     </Script>
-  {/*<!-- End Google Tag Manager -->*/}
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5M78MWM"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden;">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
 
 </head>
 <body>
-    {/*<!-- Google Tag Manager (noscript) -->*/}
-      <noscript>
-        <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-5M78MWM"
-          height="0"
-          width="0"
-          style="display: none; visibility: hidden;">
-        </iframe>
-      </noscript>
-      {/*<!-- End Google Tag Manager (noscript) -->*/}
     <Header>
         <div class="ecommerce-box">
                 <div class="white-box">
@@ -663,63 +665,64 @@
     </Main>
     <footer>
         <div id="contato" class="footer-box">
-            <div class="logo-footer-box">
-                <img alt="logo da empresa UX solutions" class="logo-footer" src="https://uxgroup.com.br/_next/static/media/ux-branco.40be281c.svg" alt="">
-            </div>
-            <div class="infos-box">
-                <div class="infos-itens-one">
-                    <h3>
-                        Nossas Verticais
-                    </h3>
-                    <a target="_blank" href="https://uxff.com.br/">UX Fulfillment</a>
-                    <a target="_blank" href="https://uxsolutions.com.br/">UX Solutions</a>
-                    <a target="_blank" href="https://uxconnect.com.br/">UX Connect</a>
-                    <a target="_blank" href="https://uxdelivery.com.br/">UX Delivery</a>
-                </div>
-                <div class="infos-itens-two">
-                    <h3>
-                        UX Group
-                    </h3>
-                    <a href="https://uxgroup.com.br">Home</a>
-                    <a target="_blank" href="https://uxsolutions.com.br/fusion/">E-commerce</a>
-                    <a target="_blank" href="https://uxsolutions.com.br/shipn/">Marketplace</a>
-                    <a target="_blank" href="https://uxsolutions.com.br/aion/">Frete dinâmico</a>
-                    <a target="_blank" href="https://uxsolutions.com.br/trux/">TMS</a>
-                </div>
+            <div class="title-footer">
+                Saiba mais sobre nossas soluções.
+                <h2 class="sub-footer">
+                    Nos informe qual tipo de contato gostaria de fazer.
+                </h2>
             </div>
             <div class="form-box">
-                <h3>
-                    Contato
-                </h3>
                 <div id="form" class="form">
-                    <form class="form" action="http://localhost:8080/enviar-email" method="post">
-                        <input type="text" name="nome" placeholder="Nome*" required>
-                        <input type="email" name="email" placeholder="Email*" required>
-                        <input type="tel" name="telefone" placeholder="Telefone*" required>
-                        <input type="text" name="empresa" placeholder="Empresa*" required>
-                        <select aria-label="State" class="assunto-forms" id="opcoes" name="assunto">
-                            <label for="state">
-                                <option value="opcao1">Quero saber sobre:</option>
-                            </label>
-                            <label for="state">
-                                <option value="TMS Embarcador">TMS Embarcador</option>
-                            </label>
-                            <label for="state">
-                                <option value="TMS Transportador">TMS Transportador</option>
-                            </label>
-                            <label for="state">
-                                <option value="Solução para Marketplace">Solução para Marketplace</option>
-                            </label>
-                            <label for="state">
-                                <option value="Live Tracking">Live Tracking</option>
-                            </label>   
-                        </select>
-                        <input class="form-message" type="text" name="mensagem" placeholder="Mensagem">
-                        <button class="button-form" type="submit">Enviar</button>
-                    </form>
+                    <div 
+                        role="main" 
+                        id="formulario-provisorio-novo-site-ux-ea9cfd47c9dd2de18f79">
+                    </div>
+                    <script 
+                        type="text/javascript" 
+                        src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js">
+                    </script>
+                    <script 
+                        type="text/javascript"> 
+                            new RDStationForms('formulario-provisorio-novo-site-ux-ea9cfd47c9dd2de18f79', 'UA-191432220-1').createForm();
+                    </script>
                 </div>
             </div>
         </div
-    </footer>
+    ><div class="line-footer"></div>
+    <div class="footer-informations">
+        <div class="logo-footer">
+            <a href="https://uxgroup.com.br">
+                <img src="https://uxgroup.com.br/_next/static/media/ux-branco.40be281c.svg" alt="imagem footer, logo UX GROUP">
+            </a>
+        </div>
+        <div class="politica-privacidade">
+            <a href="https://uxgroup.com.br/privacy">
+                Política de privacidade
+            </a>
+            © Copyright 2023 UX Group
+        </div>
+        <div class="redes">
+            <a class="icon-footer" href="https://www.instagram.com/uxgroup_/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a class="icon-footer" href="https://www.linkedin.com/company/uxgroup/">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+            <a class="icon-footer" href="https://www.facebook.com/UX-GROUP-103113961067558/">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a class="icon-footer" href="https://www.youtube.com/channel/UCzgk7wIIwM3IUQeBQxz7big">
+                <i class="fab fa-youtube-square"></i>
+            </a>
+        </div>
+        <div class="politica-privacidade-mobile">
+            <a href="https://uxgroup.com.br/privacy">
+                Política de privacidade
+            </a>
+            © Copyright 2023 UX Group
+        </div>
+    </div>
+</footer>
+    
 </body>
 </html>

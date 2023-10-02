@@ -1,27 +1,36 @@
 footer {
     background-color: #000;
-    height: 100vh;
-    padding-left: 5%;
-    padding-top: 10%;
-    padding-right: 10%;
+    height: auto;
+    padding-top: 5%;
+    
 }
 
 .footer-box {
-    display: grid;
-    grid-template-areas: "logo info form";
-    grid-template-columns: 15% 35% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2%;
-    text-align: left;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 05%;
 }
 
-.logo-footer-box {
-    grid-area: logo;
+.title-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 100%;
+    padding-bottom: 2%;
 }
-
-.logo-footer {
-    width: 80%;
-    max-width: 100%;
-    padding-top: 3%;
+.sub-footer{
+    font-size: 0.9rem;
+    font-weight: 300;
 }
 
 .infos-box {
@@ -33,23 +42,6 @@ footer {
     gap: 10%;
 }
 
-.infos-itens-one,
-.infos-itens-two {
-    display: flex;
-    flex-direction: column;
-    gap: 2%;
-}
-
-.infos-itens-two > a:hover {
-    color: #0173fe;
-    transition: 0.3s;
-}
-
-.infos-itens-one > a:hover {
-    color: #0173fe;
-    transition: 0.3s;
-}
-
 a {
     text-decoration: none;
     color: #fff;
@@ -57,106 +49,98 @@ a {
 }
 
 
-.form-box {
-    display: flex;
-    flex-direction: column;
-    grid-area: form;
-    color: #fff;
-    text-align: left;
-    gap: 10px;
-    height: auto;
-    padding-left: 10%;
-}
-
 .form {
     display: flex;
-    flex-wrap: wrap;
-}
-
-.form > input {
-    flex: 1;
-    padding: 3%;
-    background-color: #00000000;
-    border: solid 1px #fff;
-    box-shadow: none;
-    margin-bottom: 2%;
-    margin-right: 3%;
-    color: #FFF;
-}
-
-.form-message {
-    flex: 1;
-    padding-bottom: 50px !important;
+    flex-direction: column;
     width: 100%;
 }
 
-.button-form {
-    width: 97%;
-    padding: 2%;
-    background-color: #FFF;
-    border-radius: 100px;
-    border: none;
+.form-box{
+    padding-bottom: 5%;
 }
 
-.button-form:hover {
-    background-color: #323232;
+.line-footer{
+    height: 3px;
+    background-color: #ffffff;
+    width: 100%;
+    
+}
+
+.footer-informations{
+    display: grid;
+    grid-template-areas: "logo politica redes";
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    padding-left: 05%;
+    padding-right: 05%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.logo-footer {
+    grid-area: logo;
+}
+
+.logo-footer > a > img {
+    width: 20%;
+}
+
+.politica-privacidade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: politica;
+    font-size: 0.8rem;
     color: #FFF;
-    transition: 0.4s;
+    gap: 2%;
+}
+.politica-privacidade-mobile{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    grid-area: politica;
+    font-size: 0.8rem;
+    color: #FFF;
+    gap: 2%;
 }
 
-.assunto-forms {
-    border: 1px solid white;
-    background-color: #00000000;
-    width: 97%;
-    color: #fff;
-    padding: 2%;
-    margin-bottom: 10px;
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1%;
+    font-size: 1.7rem;
+}
+
+.icon-footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 @media (max-width: 768px) {
     footer {
         height: auto;
-        padding: 20% 10% 0;
-        padding-bottom: 20%;
+    }
+    .footer-box{
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
-    .button-form{
-        width: 90%;
-        padding: 3%;
+    .sub-footer{
+        width: 80%;
     }
-
     .logo-footer {
         width: 40%;
     }
 
-    .footer-box {
-        display: flex;
-        flex-direction: column;
+    .title-footer{
+        text-align: center;
+        font-weight: 700;
+        line-height: 40px;
     }
 
-    .infos-box {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        padding-top: 10%;
-        gap: 20px;
-    }
-
-    .infos-itens-one{
-        display: flex;
-        flex-direction:column;
-        gap: 10px;
-    }
-
-    .infos-itens-two{
-        display: flex;
-        flex-direction:column;
-        gap: 10px;
-    }
-
-    .form-box {
-        padding-top: 5%;
-        padding-left: 0%;
+    .sub-footer{
+        line-height: 20px;
     }
 
     .form {
@@ -166,17 +150,44 @@ a {
         padding-top: 2%;
     }
 
-    .form > input {
+    .footer-informations{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        gap: 20px;
+    }
+    .logo-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
-        padding: 3%;
+    }
+    .redes{
+        gap: 5%;
+    }
+    .logo-footer > a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo-footer > a > img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+    }
+    .politica-privacidade{
+        display: none;
     }
 
-    .form-message {
-        width: 100%;
+    .politica-privacidade-mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
-    .assunto-forms{
-        width: 100%;
-    }
+
 }
 
 @media (max-width: 500px) {
@@ -184,32 +195,10 @@ a {
         padding-top: 20%;
     }
 
-    .assunto-forms {
-        width: 100%;
-    }
-
-    .button-form {
-        width: 100%;
-    }
-    .infos-box{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
 }
 
 @media (max-width: 667px) {
-    .form-message{
-        padding-bottom: 40px !important;
-    }
 
-    .form-box{
-        width: 100%;
-    }
-
-    .form-box > input{
-        width: 100%;
-    }
 
     .form{
         width: 100%;
