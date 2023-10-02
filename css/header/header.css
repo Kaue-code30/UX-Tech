@@ -49,6 +49,7 @@ header {
     background-color: #000;
     color: #FFF;
     border: 1px solid #FFF;
+    transition: 0.3s;
 }
 .button-header:hover > a{
     color: #FFF;

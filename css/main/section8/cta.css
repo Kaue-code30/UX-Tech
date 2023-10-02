@@ -64,7 +64,17 @@
     color: #FFF;
 }
 .button-one{
-    background-color: #0074ff;;
+    display: flex;
+    justify-content: center;
+    padding: 0.8%;
+    background-color: #0074ff;
+    border-radius: 100px;
+    width:20%;
+}
+.button-one > button{
+    border: none;
+    background-color: rgba(0, 115, 255, 0);
+    color: #FFF;
 }
 .button-one:hover{
     background-color: #000;
@@ -93,6 +103,16 @@ button{
     .description-cta{
         font-size: 16px;
     }
+
+    .button-one{
+        width: 100%;
+        padding: 0%;
+    }
+    .button-one > button{
+        width: 100%;
+        padding: 3%;
+    }
+
     .box-buttons{
         display: flex;
         flex-direction: column;
