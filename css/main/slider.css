@@ -94,25 +94,25 @@
 
     /* Estilos dos slides individuais */
     #slide-1 {
-        background-image: url('../../images/Main/Slider/fusion-slide-banner.png');
+        background-image: url('../../images/Main/Slider/fusion-slide-banner.jpg');
         background-position: center;
         background-repeat: no-repeat;
     }
 
     #slide-2 {
-        background-image: url('../../images/Main/Slider/trux-slide-banner.png');
+        background-image: url('../../images/Main/Slider/trux-slide-banner.jpg');
         background-position: center;
         background-repeat: no-repeat;
     }
 
     #slide-3 {
-        background-image: url('../../images/Main/Slider/shipn-slide-banner.png');
+        background-image: url('../../images/Main/Slider/shipn-slide-banner.jpg');
         background-position: center;
         background-repeat: no-repeat;
     }
 
     #slide-4 {
-        background-image: url('../../images/Main/Slider/connect-slide-banner.png');
+        background-image: url('../../images/Main/Slider/connect-slide-banner.jpg');
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -126,7 +126,7 @@
     .button-slide {
         display: flex;
         justify-content: center;
-        padding: 5px;
+        padding: 0.4%;
         background-color: #ffffff;
         border: 1px solid #FFF;
         border-radius: 100px;

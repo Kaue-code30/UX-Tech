@@ -22,6 +22,7 @@
     grid-area: text;
     font-size: 1.5rem;
     gap: 2%;
+    padding-top: 70px;
 }
 
 .sub-title-tech {
@@ -91,6 +92,7 @@
         flex-direction: column;
         justify-content: center;
         grid-area: text;
+        padding-top: 0;
         gap: 2%;
     }
 
